@@ -1,5 +1,5 @@
 {
-  "name": "@yertoot/designsystem",
+  "name": "@Yertoot/designsystem",
   "version": "1.0.0",
   "private": true,
   "main": "dist/cjs/index.js",
