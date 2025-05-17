@@ -1,14 +1,13 @@
 {
   "name": "@TaysaTeam/design-system",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "version": "1.0.04",
+  "main": "dist/index.umd.js",
+   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
-  "registry": "https://registry.npmjs.org/"
-},
-  "files": [
-    "dist"
-  ],
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
