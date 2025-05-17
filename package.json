@@ -1,11 +1,12 @@
 {
-  "name": "@taysa/design-system",
+  "name": "@TaysaTeam/design-system",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
   },
   "scripts": {
     "dev": "vite",
