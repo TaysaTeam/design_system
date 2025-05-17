@@ -2,7 +2,7 @@ name: Publish to GitHub Packages
 
 on:
   push:
-    branches: [main] # یا هر شاخه‌ای که پابلیش از اون انجام بشه
+    branches: [main] 
 
 jobs:
   publish:
@@ -10,7 +10,7 @@ jobs:
 
     permissions:
       contents: read
-      packages: write # اجازه برای انتشار پکیج
+      packages: write
 
     steps:
       - uses: actions/checkout@v4
@@ -31,4 +31,4 @@ jobs:
       - name: Publish to GitHub Packages
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN_PUBLISH }}
