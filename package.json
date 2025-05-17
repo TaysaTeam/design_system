@@ -20,10 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/TaysaTeam/design_system.git"
   },
-  "files": [
-    "dist/styles/main.css",
-    "src/styles/"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
