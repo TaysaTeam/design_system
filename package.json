@@ -1,5 +1,5 @@
 {
-  "name": "@TaysaTeam/design_system",
+  "name": "@TaysaTeam/design-system",
   "version": "1.0.04",
   "main": "dist/index.umd.js",
   "types": "dist/index.d.ts",
