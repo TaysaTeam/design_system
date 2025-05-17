@@ -1,9 +1,14 @@
 {
   "name": "@TaysaTeam/design-system",
   "version": "1.0.06",
-  "main": "dist/index.umd.js",
+  "type": "module",
   "types": "dist/index.d.ts",
-  "module": "dist/index.es.js",
+ "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    "import": "./dist/index.es.js",
+    "require": "./dist/index.cjs.js"
+  },
   "private": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
@@ -22,7 +27,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/TaysaTeam/design_system/issues"
   },
