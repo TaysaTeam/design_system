@@ -1,6 +1,6 @@
 {
   "name": "@TaysaTeam/design-system",
-  "version": "1.0.06",
+  "version": "1.0.07",
   "type": "module",
   "types": "dist/index.d.ts",
  "main": "./dist/index.cjs.js",
