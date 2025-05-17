@@ -4,15 +4,11 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "declaration": true,
-    "declarationDir": "dist/types",
-    "emitDeclarationOnly": false,
     "outDir": "dist",
+    "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "types": ["node", "react"]
+    "skipLibCheck": true
   },
   "include": ["src"]
 }
