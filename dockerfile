@@ -1,17 +1,15 @@
-FROM node:18-alpine AS builder
+FROM node:18
 
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install --no-cache
+RUN apt-get update && apt-get install -y xdg-utils
+COPY package*.json ./
+
+RUN npm install --legacy-peer-deps
+
+RUN npm install -g storybook
+
 COPY . .
-RUN npm run build
+
 RUN npm run build-storybook
 
-FROM node:18-alpine
-WORKDIR /app
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/storybook-static ./storybook-static
-EXPOSE 6006
-CMD ["npm", "run", "preview"]
+CMD ["npm", "run", "storybook"]
