@@ -21,18 +21,4 @@ export default defineConfig({
       },
     },
   },
-  css: {
-    preprocessorOptions: {
-    scss: {
-  additionalData: `@use "@styles/_colors.scss" as *;`
-}
-
-    },
-  },
-  resolve: {
-  alias: {
-    '@styles': path.resolve(__dirname, './src/styles'),
-  },
-},
-
 });

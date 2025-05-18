@@ -1,15 +1,10 @@
 {
   "name": "@TaysaTeam/design-system",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "dist/index.umd.js",
-"sass": "src/styles/index.scss",
   "types": "dist/index.d.ts",
   "module": "dist/index.es.js",
   "private": false,
-  "files": [
-  "dist",
-  "src/styles"
-],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "restricted"
