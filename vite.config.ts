@@ -2,10 +2,21 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import path from "path";
-import sass from "sass";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [
+    react(),
+    dts(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "src/styles/**/*",  // همه فایل‌های داخل styles
+          dest: "styles",           // کپی داخل dist/styles
+        },
+      ],
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
@@ -22,5 +33,4 @@ export default defineConfig({
       },
     },
   },
- 
 });
