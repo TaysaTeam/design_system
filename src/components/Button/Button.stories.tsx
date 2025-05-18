@@ -1,6 +1,6 @@
-// src/components/Button/Button.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
+import './_button.module.scss';
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -12,6 +12,6 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: "Click me!",
+    label: "Test Button",
   },
 };
