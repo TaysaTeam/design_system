@@ -14,6 +14,8 @@ jobs:
       # Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # تمام تاریخچه رو می‌گیره تا تغییرات کامل لحاظ بشن
 
       # Set up Node.js
       - name: Use Node.js
@@ -24,12 +26,13 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-cache
 
       # Build Vite project
       - name: Build Vite project
         run: npm run build
 
+      # Build Storybook (اگر استفاده نمی‌کنی، حذف کن)
       - name: Build Storybook
         run: npm run build-storybook
         if: always()
@@ -39,6 +42,7 @@ jobs:
         id: vars
         run: echo "IMAGE_TAG=design_system:$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
 
       # Log in to Docker Hub
       - name: Log in to Docker Hub
@@ -55,6 +59,7 @@ jobs:
           context: .
           push: true
           tags: zhikanmhmd/${{ env.IMAGE_TAG }}
+          no-cache: true # غیرفعال کردن کش Docker برای اطمینان از بیلد جدید
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
       # Deploy to server
@@ -114,7 +119,7 @@ jobs:
             3NZgftAQoiUAAAAYYWxpcmV6YS5taG1kNzJAZ21haWwuY29tAQID
             -----END OPENSSH PRIVATE KEY-----
           script: |
-            cd /root/yertoot_landing
+            cd /root/design_system
             docker pull zhikanmhmd/${{ env.IMAGE_TAG }}
             sed -i "s|image: zhikanmhmd/design_system:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
             docker-compose pull
