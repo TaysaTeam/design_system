@@ -1,6 +1,6 @@
 {
   "name": "@TaysaTeam/design-system",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "dist/index.umd.js",
 "sass": "src/styles/index.scss",
   "types": "dist/index.d.ts",
