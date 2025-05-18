@@ -1,21 +1,10 @@
 import { defineConfig } from 'tsup';
-import copy from 'esbuild-plugin-copy';
 
 export default defineConfig({
   entry: ['src/index.ts'],
-  format: ['esm'],
+  format: ['esm', 'cjs'],
   dts: true,
-  clean: true,
   outDir: 'dist',
-  esbuildPlugins: [
-    copy({
-      assets: [
-        {
-          from: ['./src/styles/**/*'],
-          to: ['./dist/styles'],
-        },
-      ],
-      watch: true,
-    }),
-  ],
+  clean: true,
+  onSuccess: 'cp src/styles/colors.scss dist/colors.scss',
 });
