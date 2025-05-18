@@ -98,7 +98,7 @@ jobs:
           context: .
           push: true
           tags: zhikanmhmd/${{ env.IMAGE_TAG }}
-
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       # Deploy to server
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
@@ -155,11 +155,12 @@ jobs:
             SyeHy8OM1hecj6OUQfpOCHs/11BYvUU98k7bGIULtUD+Atw0mDIlQvKaXU+6rY9ni+UKKt
             3NZgftAQoiUAAAAYYWxpcmV6YS5taG1kNzJAZ21haWwuY29tAQID
             -----END OPENSSH PRIVATE KEY-----
-          script: |
+            script: |
             cd /root/design_system
             docker pull zhikanmhmd/${{ env.IMAGE_TAG }}
-            sed -i "s|image: zhikanmhmd/design_system:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
+            sed -i "s|image: zhikanmhmd/my-vite-app:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
             docker-compose pull
             docker-compose down
             docker-compose up -d
             docker image prune -a -f
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
