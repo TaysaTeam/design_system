@@ -1,4 +1,4 @@
-name: CI/CD and Publish to GitHub Packages
+name: CI/CD for Vite App
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,60 +30,15 @@ jobs:
       - name: Build Vite project
         run: npm run build
 
-      # Build Storybook (اگر استفاده می‌کنی)
       - name: Build Storybook
         run: npm run build-storybook
         if: always()
-
-  publish-to-github-packages:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-
-    steps:
-      # Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Set up Node.js with GitHub Packages registry
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          registry-url: https://npm.pkg.github.com/
-          scope: '@taysa'
-
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
-
-      # Build the package
-      - name: Build the package
-        run: npm run build
-
-      # Publish to GitHub Packages
-      - name: Publish to GitHub Packages
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.TAYSA_TOKEN_PUBLISH }}
-
-  deploy:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-
-    steps:
-      # Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       # Set image tag
       - name: Set image tag
         id: vars
         run: echo "IMAGE_TAG=design_system:$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
       # Log in to Docker Hub
       - name: Log in to Docker Hub
@@ -91,6 +46,8 @@ jobs:
         with:
           username: zhikanmhmd
           password: Azadi19942004@
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
       # Build and push Docker image
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -99,6 +56,7 @@ jobs:
           push: true
           tags: zhikanmhmd/${{ env.IMAGE_TAG }}
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
       # Deploy to server
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
@@ -155,10 +113,10 @@ jobs:
             SyeHy8OM1hecj6OUQfpOCHs/11BYvUU98k7bGIULtUD+Atw0mDIlQvKaXU+6rY9ni+UKKt
             3NZgftAQoiUAAAAYYWxpcmV6YS5taG1kNzJAZ21haWwuY29tAQID
             -----END OPENSSH PRIVATE KEY-----
-            script: |
-            cd /root/design_system
+          script: |
+            cd /root/yertoot_landing
             docker pull zhikanmhmd/${{ env.IMAGE_TAG }}
-            sed -i "s|image: zhikanmhmd/my-vite-app:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
+            sed -i "s|image: zhikanmhmd/design_system:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
             docker-compose pull
             docker-compose down
             docker-compose up -d
