@@ -149,7 +149,7 @@ jobs:
             3NZgftAQoiUAAAAYYWxpcmV6YS5taG1kNzJAZ21haWwuY29tAQID
             -----END OPENSSH PRIVATE KEY-----
           script: |
-            cd /root/yertoot_landing
+            cd /root/design_system
             docker pull zhikanmhmd/${{ env.IMAGE_TAG }} --quiet
             sed -i "s|image: zhikanmhmd/design_system:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
             docker-compose pull
