@@ -1,4 +1,4 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -6,5 +6,7 @@ export default defineConfig({
   dts: true,
   outDir: 'dist',
   clean: true,
-  onSuccess: 'cp src/styles/colors.scss dist/colors.scss',
-});
+  splitting: false,
+  sourcemap: false,
+  onSuccess: 'cp src/styles/*.scss dist/styles/',
+})
