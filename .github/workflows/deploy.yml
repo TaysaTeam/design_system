@@ -1,4 +1,4 @@
-name: Publish and Deploy Vite App
+name: CI/CD for Vite App
 
 on:
   push:
@@ -7,51 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          registry-url: https://npm.pkg.github.com/
-          scope: '@taysa'
-
-      - name: Install dependencies
-        run: npm install --no-cache
-
-      - name: Bump package version
-        run: |
-          npm version patch --no-git-tag-version
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add package.json
-          git commit -m "Bump version to $(node -p "require('./package.json').version")"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build the package
-        run: npm run build
-
-      - name: Publish to GitHub Packages
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.TAYSA_TOKEN_PUBLISH }}
-
   build-and-deploy:
-    needs: publish
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     steps:
       - name: Checkout repository
@@ -78,13 +35,15 @@ jobs:
       - name: Set image tag
         id: vars
         run: echo "IMAGE_TAG=design_system:$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
           username: zhikanmhmd
           password: Azadi19942004@
-          
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
@@ -92,6 +51,7 @@ jobs:
           push: true
           tags: zhikanmhmd/${{ env.IMAGE_TAG }}
           no-cache: true
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
@@ -156,3 +116,4 @@ jobs:
             docker-compose down
             docker-compose up -d --force-recreate
             docker image prune -a -f
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
