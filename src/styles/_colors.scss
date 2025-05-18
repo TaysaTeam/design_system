@@ -1,18 +1,45 @@
-$primary: #0070f3;
-$secondary: #ff4081;
-$background-light: #ffffff;
-$text-light: #000000;
-$background-dark: #121212;
-$text-dark: #f0f0f0;
+// Brand
+$brand-25: #f5feff;
+$brand-50: #ecfdff;
+$brand-100: #cff9fe;
+$brand-200: #a5f0fc;
+$brand-300: #67e3f9;
+$brand-400: #22ccee;
+$brand-500: #06aed4;
+$brand-600: #088ab2;
+$brand-700: #0e7090;
+$brand-800: #155b75;
+$brand-900: #155b75;
+$brand-950: #0d2d3a;
 
 :root {
-  --primary: #{$primary};
-  --secondary: #{$secondary};
-  --background: #{$background-light};
-  --text-color: #{$text-light};
+  // Brand
+  --brand-25: #{$brand-25};
+  --brand-50: #{$brand-50};
+  --brand-100: #{$brand-100};
+  --brand-200: #{$brand-200};
+  --brand-300: #{$brand-300};
+  --brand-400: #{$brand-400};
+  --brand-500: #{$brand-500};
+  --brand-600: #{$brand-600};
+  --brand-700: #{$brand-700};
+  --brand-800: #{$brand-800};
+  --brand-900: #{$brand-900};
+  --brand-950: #{$brand-950};
 }
 
 [data-theme="dark"] {
-  --background: #{$background-dark};
-  --text-color: #{$text-dark};
+  //Brand Dark
+  --brand-25: #{$brand-950};
+  --brand-50: #{$brand-900};
+  --brand-100: #{$brand-800};
+  --brand-200: #{$brand-700};
+  --brand-300: #{$brand-600};
+  --brand-400: #{$brand-500};
+  --brand-500: #{$brand-400};
+  --brand-600: #{$brand-300};
+  --brand-700: #{$brand-200};
+  --brand-800: #{$brand-100};
+  --brand-900: #{$brand-50};
+  --brand-950: #{$brand-25};
 }
