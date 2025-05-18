@@ -1,0 +1,119 @@
+name: CI/CD for Vite App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --no-cache
+
+      - name: Build Vite project
+        run: npm run build
+
+      - name: Build Storybook 
+        run: npm run build-storybook
+        if: always()
+
+      - name: Set image tag
+        id: vars
+        run: echo "IMAGE_TAG=design_system:$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: zhikanmhmd
+          password: Azadi19942004@
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: zhikanmhmd/${{ env.IMAGE_TAG }}
+          no-cache: true
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 45.142.189.24
+          username: root
+          key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            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
+            -----END OPENSSH PRIVATE KEY-----
+          script: |
+            cd /root/design_system
+            docker pull zhikanmhmd/${{ env.IMAGE_TAG }} --quiet
+            sed -i "s|image: zhikanmhmd/design_system:.*|image: zhikanmhmd/${{ env.IMAGE_TAG }}|" docker-compose.yml
+            docker-compose pull
+            docker-compose down
+            docker-compose up -d --force-recreate
+            docker image prune -a -f
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
