@@ -1,8 +1,18 @@
-// src/styles/colors.scss
+$primary: #0070f3;
+$secondary: #ff4081;
+$background-light: #ffffff;
+$text-light: #000000;
+$background-dark: #121212;
+$text-dark: #f0f0f0;
 
 :root {
-  --color-primary: #007bff;
-  --color-secondary: #6c757d;
-  --color-success: #28a745;
-  --color-danger: #dc3545;
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --background: #{$background-light};
+  --text-color: #{$text-light};
+}
+
+[data-theme="dark"] {
+  --background: #{$background-dark};
+  --text-color: #{$text-dark};
 }
