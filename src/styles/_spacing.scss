@@ -1,0 +1,10 @@
+$space-0: 0px;
+$space-0_5: 0.125rem;
+$space-1: 0.25rem;
+
+
+:root {
+  --space-0: #{$space-0};
+  --space-0_5: #{$space-0_5};
+  --space-1: #{$space-1};
+}
