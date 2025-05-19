@@ -25,18 +25,20 @@ jobs:
           node-version: '18'
           registry-url: https://npm.pkg.github.com/
           scope: '@taysa'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install --no-cache
 
       - name: Bump package version
         run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $CURRENT_VERSION"
           npm version patch --no-git-tag-version
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          echo "New version: $NEW_VERSION"
           git add package.json
-          git commit -m "Bump version to $(node -p "require('./package.json').version")"
-          git push origin main
+          git commit -m "Bump version to $NEW_VERSION"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -71,7 +73,7 @@ jobs:
       - name: Build Vite project
         run: npm run build
 
-      - name: Build Storybook 
+      - name: Build Storybook (اختیاری)
         run: npm run build-storybook
         if: always()
 
