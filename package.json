@@ -1,26 +1,22 @@
 {
   "name": "@TaysaTeam/design-system",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "main": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.es.js",
   "private": false,
-  "exports": {
-    "./styles/main.scss": "./dist/styles/main.scss"
-  },
-  "files": [
-    "dist",
-    "dist/styles/main.scss"
-  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "restricted"
   },
+  "files": [
+    "dist",
+    "dist/main.scss"
+  ],
   "style": "./dist/styles/main.scss",
   "scripts": {
     "dev": "vite",
-    "vite": "vite",
-    "build": "vite build",
+    "build": "npm run && vite build",
     "copy:styles": "copyfiles -u 1 src/styles/**/* dist/styles",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
