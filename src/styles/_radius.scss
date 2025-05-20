@@ -1,5 +1,25 @@
 $radius-none: 0;
+$radius-xxs: 0.125rem;
+$radius-xs: 0.25rem;
+$radius-sm: 0.375rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.625rem;
+$radius-xl: 0.75;
+$radius-2xl: 1rem;
+$radius-3xl: 1.25rem;
+$radius-4xl: 1.5rem;
+$radius-full: 9999rem;
 
 :root {
   --radius-none: #{$radius-none};
+  --radius-xxs: #{$radius-xxs};
+  --radius-xs: #{$radius-xs};
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  --radius-2xl: #{$radius-2xl};
+  --radius-3xl: #{$radius-3xl};
+  --radius-4xl: #{$radius-4xl};
+  --radius-full: #{$radius-full};
 }
