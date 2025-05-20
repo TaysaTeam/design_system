@@ -1,4 +1,7 @@
 @use './colors' as *;
+@use './radius' as *;
+@use './spacing' as *;
+@use './shadow' as *;
 
 body {
   background-color: var(--primary-100);
