@@ -8,6 +8,10 @@
   "exports": {
     "./styles/main.scss": "./dist/styles/main.scss"
   },
+  "files": [
+    "dist",
+    "dist/styles/main.scss"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "restricted"
