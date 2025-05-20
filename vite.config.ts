@@ -11,8 +11,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "src/styles/**/*",  // همه فایل‌های داخل styles
-          dest: "styles",           // کپی داخل dist/styles
+          src: "src/styles/**/*", 
+          dest: "styles",         
         },
       ],
     }),
