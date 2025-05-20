@@ -1,6 +1,6 @@
 {
   "name": "@TaysaTeam/design-system",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "main": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.es.js",
@@ -16,6 +16,8 @@
   "scripts": {
     "dev": "vite",
     "build:colors": "sass src/styles/_colors.scss dist/_colors.css",
+    "build:spacing": "sass src/styles/_colors.scss dist/_spacing.css",
+    "build:radius": "sass src/styles/_colors.scss dist/_radius.css",
     "build": "npm run build:colors && vite build",
     "copy:styles": "copyfiles -u 1 src/styles/**/* dist/styles",
     "storybook": "storybook dev -p 6006",
