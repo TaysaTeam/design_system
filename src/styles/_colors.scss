@@ -26,20 +26,6 @@ $secondary-light-800: #1c1c1c;
 $secondary-light-900: #050505;
 $secondary-light-950: #000000;
 
-// Info
-$info-25: #f5faff;
-$info-50: #eff8ff;
-$info-100: #d1e9ff;
-$info-200: #b2ddff;
-$info-300: #84caff;
-$info-400: #53b1fd;
-$info-500: #2e90fa;
-$info-600: #1570ef;
-$info-700: #175cd3;
-$info-800: #1849a9;
-$info-900: #194185;
-$info-950: #102a56;
-
 // Gray (light mode)
 $gray-light-25: #fcfcfd;
 $gray-light-50: #f9fafb;
@@ -67,6 +53,83 @@ $gray-primary-700: #c6c9cc;
 $gray-primary-800: #77797a;
 $gray-primary-900: #4f5051;
 $gray-primary-950: #272828;
+
+// Border colors
+$primary-border-01: #088ab2;
+$primary-border-02: #155b75;
+$secondary-border-01: #050505;
+$secondary-border-02: #393939;
+$neutral-border-01: #1c1c1c;
+$neutral-border-02: #c7c7c7;
+$neutral-border-03: #565656;
+$success-border-01: #17b26a;
+$success-border-02: #067647;
+$info-border-01: #1570ef;
+$info-border-02: #1849a9;
+$warning-border-01: #f79009;
+$warning-border-02: #dc6803;
+$error-border-01: #d92d20;
+$error-border-02: #912018;
+
+// Background colors
+$primary-background-01: #ecfdff;
+$primary-background-02: #06aed4;
+$primary-background-03: #088ab2;
+$primary-background-04: #0e6f90;
+$secondary-background-01: #c7c7c7;
+$secondary-background-02: #565656;
+$secondary-background-03: #050505;
+$neutral-background-01: #000000;
+$neutral-background-02: #393939;
+$neutral-background-03: #8f8f8f;
+$success-background-01: #ecfdf3;
+$success-background-02: #75e0a7;
+$success-background-03: #17b26a;
+$success-background-04: #067647;
+$info-background-01: #eff8ff;
+$info-background-02: #53b1fd;
+$info-background-03: #1570ef;
+$info-background-04: #1849a9;
+$warning-background-01: #fffaeb;
+$warning-background-02: #fedf89;
+$warning-background-03: #f79009;
+$warning-background-04: #dc6803;
+$error-background-01: #fef3f2;
+$error-background-02: #f97066;
+$error-background-03: #d92d20;
+$error-background-04: #912018;
+
+// Foreground colors
+$primary-foreground-01: #088ab2;
+$primary-foreground-02: #155b75;
+$secondary-foreground-01: #ffffff;
+$secondary-foreground-02: #000000;
+$neutral-foreground-01: #f2f2f2;
+$neutral-foreground-02: #c7c7c7;
+$success-foreground-01: #17b26a;
+$success-foreground-02: #067647;
+$info-foreground-01: #1570ef;
+$info-foreground-02: #1849a9;
+$warning-foreground-01: #f79009;
+$warning-foreground-02: #dc6803;
+$error-foreground-01: #d92d20;
+$error-foreground-02: #912018;
+
+// Text colors
+$primary-text-01: #ffffff;
+$primary-text-02: #000000;
+$secondary-text-01: #088ab2;
+$secondary-text-02: #155b75;
+$neutral-text-01: #f2f2f2;
+$neutral-text-02: #c7c7c7;
+$success-text-01: #17b26a;
+$success-text-02: #067647;
+$info-text-01: #1570ef;
+$info-text-02: #1849a9;
+$warning-text-01: #f79009;
+$warning-text-02: #dc6803;
+$error-text-01: #d92d20;
+$error-text-02: #912018;
 
 // Error
 $error-25: #fffbfa;
@@ -264,6 +327,20 @@ $teal-800: #125d56;
 $teal-900: #134e48;
 $teal-950: #0a2926;
 
+// Cyan
+$cyan-25: #f5feff;
+$cyan-50: #ecfdff;
+$cyan-100: #cff9fe;
+$cyan-200: #a5f0fc;
+$cyan-300: #67e3f9;
+$cyan-400: #22ccee;
+$cyan-500: #06aed4;
+$cyan-600: #088ab2;
+$cyan-700: #0e7090;
+$cyan-800: #155b75;
+$cyan-900: #164c63;
+$cyan-950: #0d2d3a;
+
 // Blue dark
 $blue-dark-25: #f5fbff;
 $blue-dark-50: #eff4ff;
@@ -277,6 +354,20 @@ $blue-dark-700: #004eeb;
 $blue-dark-800: #0040c1;
 $blue-dark-900: #00359e;
 $blue-dark-950: #002266;
+
+// Blue
+$blue-25: #f5faff;
+$blue-50: #eff8ff;
+$blue-100: #d1e9ff;
+$blue-200: #b2ddff;
+$blue-300: #84caff;
+$blue-400: #53b1fd;
+$blue-500: #2e90fa;
+$blue-600: #1570ef;
+$blue-700: #175cd3;
+$blue-800: #1849a9;
+$blue-900: #194185;
+$blue-950: #102a56;
 
 // Indigo
 $indigo-25: #f5f8ff;
@@ -433,20 +524,6 @@ $yellow-950: #542c0d;
   --secondary-light-900: #{$secondary-light-900};
   --secondary-light-950: #{$secondary-light-950};
 
-  // Info
-  --info-25: #{$info-25};
-  --info-50: #{$info-50};
-  --info-100: #{$info-100};
-  --info-200: #{$info-200};
-  --info-300: #{$info-300};
-  --info-400: #{$info-400};
-  --info-500: #{$info-500};
-  --info-600: #{$info-600};
-  --info-700: #{$info-700};
-  --info-800: #{$info-800};
-  --info-900: #{$info-900};
-  --info-950: #{$info-950};
-
   // Gray (light mode)
   --gray-light-25: #{$gray-light-25};
   --gray-light-50: #{$gray-light-50};
@@ -474,6 +551,83 @@ $yellow-950: #542c0d;
   --gray-primary-800: #{$gray-primary-800};
   --gray-primary-900: #{$gray-primary-900};
   --gray-primary-950: #{$gray-primary-950};
+
+  // Border colors
+  --primary-border-01: #{$primary-border-01};
+  --primary-border-02: #{$primary-border-02};
+  --secondary-border-01: #{$secondary-border-01};
+  --secondary-border-02: #{$secondary-border-02};
+  --neutral-border-01: #{$neutral-border-01};
+  --neutral-border-02: #{$neutral-border-02};
+  --neutral-border-03: #{$neutral-border-03};
+  --success-border-01: #{$success-border-01};
+  --success-border-02: #{$success-border-02};
+  --info-border-01: #{$info-border-01};
+  --info-border-02: #{$info-border-02};
+  --warning-border-01: #{$warning-border-01};
+  --warning-border-02: #{$warning-border-02};
+  --error-border-01: #{$error-border-01};
+  --error-border-02: #{$error-border-02};
+
+  // Background colors
+  --primary-background-01: #{$primary-background-01};
+  --primary-background-02: #{$primary-background-02};
+  --primary-background-03: #{$primary-background-03};
+  --primary-background-04: #{$primary-background-04};
+  --secondary-background-01: #{$secondary-background-01};
+  --secondary-background-02: #{$secondary-background-02};
+  --secondary-background-03: #{$secondary-background-03};
+  --neutral-background-01: #{$neutral-background-01};
+  --neutral-background-02: #{$neutral-background-02};
+  --neutral-background-03: #{$neutral-background-03};
+  --success-background-01: #{$success-background-01};
+  --success-background-02: #{$success-background-02};
+  --success-background-03: #{$success-background-03};
+  --success-background-04: #{$success-background-04};
+  --info-background-01: #{$info-background-01};
+  --info-background-02: #{$info-background-02};
+  --info-background-03: #{$info-background-03};
+  --info-background-04: #{$info-background-04};
+  --warning-background-01: #{$warning-background-01};
+  --warning-background-02: #{$warning-background-02};
+  --warning-background-03: #{$warning-background-03};
+  --warning-background-04: #{$warning-background-04};
+  --error-background-01: #{$error-background-01};
+  --error-background-02: #{$error-background-02};
+  --error-background-03: #{$error-background-03};
+  --error-background-04: #{$error-background-04};
+
+  // Foreground colors
+  --primary-foreground-01: #{$primary-foreground-01};
+  --primary-foreground-02: #{$primary-foreground-02};
+  --secondary-foreground-01: #{$secondary-foreground-01};
+  --secondary-foreground-02: #{$secondary-foreground-02};
+  --neutral-foreground-01: #{$neutral-foreground-01};
+  --neutral-foreground-02: #{$neutral-foreground-02};
+  --success-foreground-01: #{$success-foreground-01};
+  --success-foreground-02: #{$success-foreground-02};
+  --info-foreground-01: #{$info-foreground-01};
+  --info-foreground-02: #{$info-foreground-02};
+  --warning-foreground-01: #{$warning-foreground-01};
+  --warning-foreground-02: #{$warning-foreground-02};
+  --error-foreground-01: #{$error-foreground-01};
+  --error-foreground-02: #{$error-foreground-02};
+
+  // Text colors
+  --primary-text-01: #{$primary-text-01};
+  --primary-text-02: #{$primary-text-02};
+  --secondary-text-01: #{$secondary-text-01};
+  --secondary-text-02: #{$secondary-text-02};
+  --neutral-text-01: #{$neutral-text-01};
+  --neutral-text-02: #{$neutral-text-02};
+  --success-text-01: #{$success-text-01};
+  --success-text-02: #{$success-text-02};
+  --info-text-01: #{$info-text-01};
+  --info-text-02: #{$info-text-02};
+  --warning-text-01: #{$warning-text-01};
+  --warning-text-02: #{$warning-text-02};
+  --error-text-01: #{$error-text-01};
+  --error-text-02: #{$error-text-02};
 
   // Error
   --error-25: #{$error-25};
@@ -671,6 +825,20 @@ $yellow-950: #542c0d;
   --teal-900: #{$teal-900};
   --teal-950: #{$teal-950};
 
+  // Cyan
+  --cyan-25: #{$cyan-25};
+  --cyan-50: #{$cyan-50};
+  --cyan-100: #{$cyan-100};
+  --cyan-200: #{$cyan-200};
+  --cyan-300: #{$cyan-300};
+  --cyan-400: #{$cyan-400};
+  --cyan-500: #{$cyan-500};
+  --cyan-600: #{$cyan-600};
+  --cyan-700: #{$cyan-700};
+  --cyan-800: #{$cyan-800};
+  --cyan-900: #{$cyan-900};
+  --cyan-950: #{$cyan-950};
+
   // Blue dark
   --blue-dark-25: #{$blue-dark-25};
   --blue-dark-50: #{$blue-dark-50};
@@ -684,6 +852,20 @@ $yellow-950: #542c0d;
   --blue-dark-800: #{$blue-dark-800};
   --blue-dark-900: #{$blue-dark-900};
   --blue-dark-950: #{$blue-dark-950};
+
+  // Blue
+  --blue-25: #{$blue-25};
+  --blue-50: #{$blue-50};
+  --blue-100: #{$blue-100};
+  --blue-200: #{$blue-200};
+  --blue-300: #{$blue-300};
+  --blue-400: #{$blue-400};
+  --blue-500: #{$blue-500};
+  --blue-600: #{$blue-600};
+  --blue-700: #{$blue-700};
+  --blue-800: #{$blue-800};
+  --blue-900: #{$blue-900};
+  --blue-950: #{$blue-950};
 
   // Indigo
   --indigo-25: #{$indigo-25};
@@ -841,20 +1023,6 @@ $yellow-950: #542c0d;
   --secondary-light-900: #{$secondary-light-50};
   --secondary-light-950: #{$secondary-light-25};
 
-  // Info Dark
-  --info-25: #{$info-950};
-  --info-50: #{$info-900};
-  --info-100: #{$info-800};
-  --info-200: #{$info-700};
-  --info-300: #{$info-600};
-  --info-400: #{$info-500};
-  --info-500: #{$info-400};
-  --info-600: #{$info-300};
-  --info-700: #{$info-200};
-  --info-800: #{$info-100};
-  --info-900: #{$info-50};
-  --info-950: #{$info-25};
-
   // Gray (light mode) Dark
   --gray-light-25: #{$gray-light-950};
   --gray-light-50: #{$gray-light-900};
@@ -882,6 +1050,83 @@ $yellow-950: #542c0d;
   --gray-primary-800: #{$gray-primary-100};
   --gray-primary-900: #{$gray-primary-50};
   --gray-primary-950: #{$gray-primary-25};
+
+  // Border colors Dark
+  --primary-border-01: #{$primary-border-02};
+  --primary-border-02: #{$primary-border-01};
+  --secondary-border-01: #{$secondary-border-02};
+  --secondary-border-02: #{$secondary-border-01};
+  --neutral-border-01: #{$neutral-border-01};
+  --neutral-border-02: #{$neutral-border-02};
+  --neutral-border-03: #{$neutral-border-03};
+  --success-border-01: #{$success-border-02};
+  --success-border-02: #{$success-border-01};
+  --info-border-01: #{$info-border-02};
+  --info-border-02: #{$info-border-01};
+  --warning-border-01: #{$warning-border-02};
+  --warning-border-02: #{$warning-border-01};
+  --error-border-01: #{$error-border-02};
+  --error-border-02: #{$error-border-01};
+
+  // Background colors Dark
+  --primary-background-01: #{$primary-background-04};
+  --primary-background-02: #{$primary-background-03};
+  --primary-background-03: #{$primary-background-02};
+  --primary-background-04: #{$primary-background-01};
+  --secondary-background-01: #{$secondary-background-01};
+  --secondary-background-02: #{$secondary-background-02};
+  --secondary-background-03: #{$secondary-background-03};
+  --neutral-background-01: #{$neutral-background-01};
+  --neutral-background-02: #{$neutral-background-02};
+  --neutral-background-03: #{$neutral-background-03};
+  --success-background-01: #{$success-background-04};
+  --success-background-02: #{$success-background-03};
+  --success-background-03: #{$success-background-02};
+  --success-background-04: #{$success-background-01};
+  --info-background-01: #{$info-background-04};
+  --info-background-02: #{$info-background-03};
+  --info-background-03: #{$info-background-02};
+  --info-background-04: #{$info-background-01};
+  --warning-background-01: #{$warning-background-04};
+  --warning-background-02: #{$warning-background-03};
+  --warning-background-03: #{$warning-background-02};
+  --warning-background-04: #{$warning-background-01};
+  --error-background-01: #{$error-background-04};
+  --error-background-02: #{$error-background-03};
+  --error-background-03: #{$error-background-02};
+  --error-background-04: #{$error-background-01};
+
+  // Foreground colors Dark
+  --primary-foreground-01: #{$primary-foreground-02};
+  --primary-foreground-02: #{$primary-foreground-01};
+  --secondary-foreground-01: #{$secondary-foreground-02};
+  --secondary-foreground-02: #{$secondary-foreground-01};
+  --neutral-foreground-01: #{$neutral-foreground-02};
+  --neutral-foreground-02: #{$neutral-foreground-01};
+  --success-foreground-01: #{$success-foreground-02};
+  --success-foreground-02: #{$success-foreground-01};
+  --info-foreground-01: #{$info-foreground-02};
+  --info-foreground-02: #{$info-foreground-01};
+  --warning-foreground-01: #{$warning-foreground-02};
+  --warning-foreground-02: #{$warning-foreground-01};
+  --error-foreground-01: #{$error-foreground-02};
+  --error-foreground-02: #{$error-foreground-01};
+
+  // Text colors Dark
+  --primary-text-01: #{$primary-text-02};
+  --primary-text-02: #{$primary-text-01};
+  --secondary-text-01: #{$secondary-text-02};
+  --secondary-text-02: #{$secondary-text-01};
+  --neutral-text-01: #{$neutral-text-02};
+  --neutral-text-02: #{$neutral-text-01};
+  --success-text-01: #{$success-text-02};
+  --success-text-02: #{$success-text-01};
+  --info-text-01: #{$info-text-02};
+  --info-text-02: #{$info-text-01};
+  --warning-text-01: #{$warning-text-02};
+  --warning-text-02: #{$warning-text-01};
+  --error-text-01: #{$error-text-02};
+  --error-text-02: #{$error-text-01};
 
   // Error Dark
   --error-25: #{$error-950};
@@ -1065,6 +1310,20 @@ $yellow-950: #542c0d;
   --teal-900: #{$teal-50};
   --teal-950: #{$teal-25};
 
+  // Cyan Dark
+  --cyan-25: #{$cyan-950};
+  --cyan-50: #{$cyan-900};
+  --cyan-100: #{$cyan-800};
+  --cyan-200: #{$cyan-700};
+  --cyan-300: #{$cyan-600};
+  --cyan-400: #{$cyan-500};
+  --cyan-500: #{$cyan-400};
+  --cyan-600: #{$cyan-300};
+  --cyan-700: #{$cyan-200};
+  --cyan-800: #{$cyan-100};
+  --cyan-900: #{$cyan-50};
+  --cyan-950: #{$cyan-25};
+
   // (Blue dark) Dark
   --blue-dark-25: #{$blue-dark-950};
   --blue-dark-50: #{$blue-dark-900};
@@ -1078,6 +1337,20 @@ $yellow-950: #542c0d;
   --blue-dark-800: #{$blue-dark-100};
   --blue-dark-900: #{$blue-dark-50};
   --blue-dark-950: #{$blue-dark-25};
+
+  // Blue Dark
+  --blue-25: #{$blue-950};
+  --blue-50: #{$blue-900};
+  --blue-100: #{$blue-800};
+  --blue-200: #{$blue-700};
+  --blue-300: #{$blue-600};
+  --blue-400: #{$blue-500};
+  --blue-500: #{$blue-400};
+  --blue-600: #{$blue-300};
+  --blue-700: #{$blue-200};
+  --blue-800: #{$blue-100};
+  --blue-900: #{$blue-50};
+  --blue-950: #{$blue-25};
 
   // Indigo Dark
   --indigo-25: #{$indigo-950};
