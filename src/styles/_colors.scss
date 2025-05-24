@@ -26,6 +26,9 @@ $secondary-light-800: #1c1c1c;
 $secondary-light-900: #050505;
 $secondary-light-950: #000000;
 
+// Secondary (dark mode)
+$secondary-dark-25:#020202;
+
 // Gray (light mode)
 $gray-light-25: #fcfcfd;
 $gray-light-50: #f9fafb;
@@ -1010,7 +1013,7 @@ $yellow-950: #542c0d;
   --brand-950: #{$brand-25};
 
   // Secondary (light mode) Dark
-  --secondary-light-25: #{$secondary-light-950};
+  --secondary-light-25: #{$secondary-dark-25};
   --secondary-light-50: #{$secondary-light-900};
   --secondary-light-100: #{$secondary-light-800};
   --secondary-light-200: #{$secondary-light-700};
