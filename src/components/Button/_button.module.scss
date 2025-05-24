@@ -150,15 +150,15 @@
   }
 
   &.medium {
-    font-size: 16px;
+    font-size: var(--space-4);
     font-weight: 600;
-    line-height: 24px;
+    line-height: var(--space-6);
   }
 
   &.small {
     height: var(--space-10);
     font-size: 14px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: var(--space-6);
   }
 }

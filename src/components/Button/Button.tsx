@@ -15,11 +15,10 @@ export const Button = ({
   size = "medium",
   disabled = false,
 }: Props) => {
+  const classes = `${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`;
+
   return (
-    <button
-      className={`${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`}
-      disabled={disabled}
-    >
+    <button className={classes} disabled={disabled}>
       {label}
     </button>
   );
