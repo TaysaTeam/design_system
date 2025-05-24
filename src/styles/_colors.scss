@@ -55,10 +55,14 @@ $gray-primary-900: #4f5051;
 $gray-primary-950: #272828;
 
 // Border colors
-$primary-border-01: #088ab2;
-$primary-border-02: #155b75;
+$primary-border-01: #22ccee;
+$primary-border-02: #06aed4;
+$primary-border-03: #088ab2;
+$primary-border-04: #155b75;
 $secondary-border-01: #050505;
 $secondary-border-02: #393939;
+$secondary-border-03: #565656;
+$secondary-border-04: #8f8f8f;
 $neutral-border-01: #1c1c1c;
 $neutral-border-02: #c7c7c7;
 $neutral-border-03: #565656;
@@ -70,6 +74,27 @@ $warning-border-01: #f79009;
 $warning-border-02: #dc6803;
 $error-border-01: #d92d20;
 $error-border-02: #912018;
+
+// Border colors Dark
+$primary-border-dark-01: #06aed4;
+$primary-border-dark-02: #67e3f9;
+$primary-border-dark-03: #a5f0fc;
+$primary-border-dark-04: #cff9fe;
+$secondary-border-dark-01: #ffffff;
+$secondary-border-dark-02: #e3e3e3;
+$secondary-border-dark-03: #c6c6c6;
+$secondary-border-dark-04: #aaaaaa;
+$neutral-border-dark-01: #fafafa;
+$neutral-border-dark-02: #383838;
+$neutral-border-dark-03: #717171;
+$success-border-dark-01: #47cd89;
+$success-border-dark-02: #abefc6;
+$info-border-dark-01: #84caff;
+$info-border-dark-02: #d1e9ff;
+$warning-border-dark-01: #fdb022;
+$warning-border-dark-02: #fec84b;
+$error-border-dark-01: #fda29b;
+$error-border-dark-02: #fee4e2;
 
 // Background colors
 $primary-background-01: #ecfdff;
@@ -555,8 +580,12 @@ $yellow-950: #542c0d;
   // Border colors
   --primary-border-01: #{$primary-border-01};
   --primary-border-02: #{$primary-border-02};
+  --primary-border-03: #{$primary-border-03};
+  --primary-border-04: #{$primary-border-04};
   --secondary-border-01: #{$secondary-border-01};
   --secondary-border-02: #{$secondary-border-02};
+  --secondary-border-03: #{$secondary-border-03};
+  --secondary-border-04: #{$secondary-border-04};
   --neutral-border-01: #{$neutral-border-01};
   --neutral-border-02: #{$neutral-border-02};
   --neutral-border-03: #{$neutral-border-03};
@@ -1052,21 +1081,25 @@ $yellow-950: #542c0d;
   --gray-primary-950: #{$gray-primary-25};
 
   // Border colors Dark
-  --primary-border-01: #{$primary-border-02};
-  --primary-border-02: #{$primary-border-01};
-  --secondary-border-01: #{$secondary-border-02};
-  --secondary-border-02: #{$secondary-border-01};
-  --neutral-border-01: #{$neutral-border-01};
-  --neutral-border-02: #{$neutral-border-02};
-  --neutral-border-03: #{$neutral-border-03};
-  --success-border-01: #{$success-border-02};
-  --success-border-02: #{$success-border-01};
-  --info-border-01: #{$info-border-02};
-  --info-border-02: #{$info-border-01};
-  --warning-border-01: #{$warning-border-02};
-  --warning-border-02: #{$warning-border-01};
-  --error-border-01: #{$error-border-02};
-  --error-border-02: #{$error-border-01};
+  --primary-border-01: #{$primary-border-dark-01};
+  --primary-border-02: #{$primary-border-dark-02};
+  --primary-border-03: #{$primary-border-dark-03};
+  --primary-border-04: #{$primary-border-dark-04};
+  --secondary-border-01: #{$secondary-border-dark-01};
+  --secondary-border-02: #{$secondary-border-dark-02};
+  --secondary-border-03: #{$secondary-border-dark-03};
+  --secondary-border-04: #{$secondary-border-dark-04};
+  --neutral-border-01: #{$neutral-border-dark-01};
+  --neutral-border-02: #{$neutral-border-dark-02};
+  --neutral-border-03: #{$neutral-border-dark-03};
+  --success-border-01: #{$success-border-dark-01};
+  --success-border-02: #{$success-border-dark-02};
+  --info-border-01: #{$info-border-dark-01};
+  --info-border-02: #{$info-border-dark-02};
+  --warning-border-01: #{$warning-border-dark-01};
+  --warning-border-02: #{$warning-border-dark-02};
+  --error-border-01: #{$error-border-dark-01};
+  --error-border-02: #{$error-border-dark-02};
 
   // Background colors Dark
   --primary-background-01: #{$primary-background-04};
