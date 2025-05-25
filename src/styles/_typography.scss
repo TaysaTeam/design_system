@@ -87,15 +87,15 @@ $weights: (
     @include typography(1rem, $weight, 1.5rem);
   }
 
-  .body1-lg-#{$key} {
+  .body1-m-lg-#{$key} {
     @include typography(1rem, $weight, 1.5rem);
   }
 
-  .body2-md-#{$key} {
+  .body2-m-md-#{$key} {
     @include typography(0.875rem, $weight, 1.25rem);
   }
 
-  .body3-sm-#{$key} {
+  .body3-m-sm-#{$key} {
     @include typography(0.75rem, $weight, 1.125rem);
   }
 
