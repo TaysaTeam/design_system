@@ -1,16 +1,6 @@
-import { PropsWithChildren } from "react";
-import { Icon, IconName } from "../Icon";
+import { Icon } from "../Icon";
 import styles from "./_button.module.scss";
-
-type Props = PropsWithChildren & {
-  label: string;
-  variant?: "primary" | "secondary";
-  type?: "contained" | "outlined" | "text";
-  size?: "large" | "medium" | "small";
-  disabled?: boolean;
-  leftIcon?: IconName;
-  rightIcon?: IconName;
-};
+import { ButtonProps } from "./types";
 
 export const Button = ({
   children,
@@ -21,7 +11,7 @@ export const Button = ({
   leftIcon,
   rightIcon,
   ...rest
-}: Props) => {
+}: ButtonProps) => {
   const classes = `${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`;
 
   return (
