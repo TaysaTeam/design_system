@@ -37,7 +37,7 @@ type Story = StoryObj<typeof Button>;
 
 export const PrimaryContained: Story = {
   args: {
-    label: "Primary Contained",
+    children: "Primary Contained",
     variant: "primary",
     type: "contained",
   },
@@ -45,7 +45,7 @@ export const PrimaryContained: Story = {
 
 export const PrimaryOutlined: Story = {
   args: {
-    label: "Primary Outlined",
+    children: "Primary Outlined",
     variant: "primary",
     type: "outlined",
   },
@@ -53,7 +53,7 @@ export const PrimaryOutlined: Story = {
 
 export const PrimaryText: Story = {
   args: {
-    label: "Primary Text",
+    children: "Primary Text",
     variant: "primary",
     type: "text",
   },
@@ -62,7 +62,7 @@ export const PrimaryText: Story = {
 // Secondary Buttons
 export const SecondaryContained: Story = {
   args: {
-    label: "Secondary Contained",
+    children: "Secondary Contained",
     variant: "secondary",
     type: "contained",
   },
@@ -70,7 +70,7 @@ export const SecondaryContained: Story = {
 
 export const SecondaryOutlined: Story = {
   args: {
-    label: "Secondary Outlined",
+    children: "Secondary Outlined",
     variant: "secondary",
     type: "outlined",
   },
@@ -78,7 +78,7 @@ export const SecondaryOutlined: Story = {
 
 export const SecondaryText: Story = {
   args: {
-    label: "Secondary Text",
+    children: "Secondary Text",
     variant: "secondary",
     type: "text",
   },
@@ -87,7 +87,7 @@ export const SecondaryText: Story = {
 // Disabled States
 export const DisabledContained: Story = {
   args: {
-    label: "Disabled Contained",
+    children: "Disabled Contained",
     variant: "primary",
     type: "contained",
     disabled: true,
@@ -96,7 +96,7 @@ export const DisabledContained: Story = {
 
 export const DisabledOutlined: Story = {
   args: {
-    label: "Disabled Outlined",
+    children: "Disabled Outlined",
     variant: "primary",
     type: "outlined",
     disabled: true,
@@ -105,7 +105,7 @@ export const DisabledOutlined: Story = {
 
 export const DisabledText: Story = {
   args: {
-    label: "Disabled Text",
+    children: "Disabled Text",
     variant: "primary",
     type: "text",
     disabled: true,
@@ -114,7 +114,7 @@ export const DisabledText: Story = {
 
 export const WithleftIcon: Story = {
   args: {
-    label: "Start Icon",
+    children: "Start Icon",
     variant: "primary",
     type: "contained",
     leftIcon: "add",
@@ -123,7 +123,7 @@ export const WithleftIcon: Story = {
 
 export const WithrightIcon: Story = {
   args: {
-    label: "End Icon",
+    children: "End Icon",
     variant: "primary",
     type: "contained",
     rightIcon: "add",
@@ -132,7 +132,7 @@ export const WithrightIcon: Story = {
 
 export const WithBothIcons: Story = {
   args: {
-    label: "Both Icons",
+    children: "Both Icons",
     variant: "primary",
     type: "contained",
     leftIcon: "add",

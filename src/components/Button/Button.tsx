@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { Icon } from "../Icon";
 import styles from "./_button.module.scss";
 import { ButtonProps } from "./types";
@@ -10,9 +11,17 @@ export const Button = ({
   disabled = false,
   leftIcon,
   rightIcon,
+  className,
   ...rest
 }: ButtonProps) => {
-  const classes = `${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`;
+  const classes = clsx(
+    styles.button,
+    styles[variant],
+    styles[type],
+    styles[size],
+    { [styles.withIcon]: leftIcon || rightIcon },
+    className
+  );
 
   return (
     <button className={classes} disabled={disabled} {...rest}>
@@ -20,7 +29,8 @@ export const Button = ({
         <Icon
           name={leftIcon}
           color="currentColor"
-          className={styles.leftIcon}
+          w={24}
+          h={24}
         />
       )}
       {children}
@@ -28,7 +38,8 @@ export const Button = ({
         <Icon
           name={rightIcon}
           color="currentColor"
-          className={styles.rightIcon}
+          w={24}
+          h={24}
         />
       )}
     </button>
