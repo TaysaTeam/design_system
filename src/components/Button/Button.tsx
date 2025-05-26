@@ -29,8 +29,6 @@ export const Button = ({
           name={leftIcon}
           color="currentColor"
           className={styles.leftIcon}
-          w={24}
-          h={24}
         />
       )}
       {label}
@@ -39,8 +37,6 @@ export const Button = ({
           name={rightIcon}
           color="currentColor"
           className={styles.rightIcon}
-          w={24}
-          h={24}
         />
       )}
     </button>
