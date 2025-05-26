@@ -1,7 +1,7 @@
 @use "/src/styles/spacing";
 @use "/src/styles/radius";
 @use "/src/styles/colors";
-@use "/src/styles/typography";
+@use "/src/styles/typography" as *;
 
 .button {
   color: white;
@@ -61,6 +61,7 @@
     &.text {
       color: var(--secondary-text-02);
       background-color: transparent;
+      border: none;
     }
   }
 
@@ -161,6 +162,7 @@
   }
 }
 
+// ===== Icons =====
 .leftIcon,
 .rightIcon {
   height: var(--space-6);

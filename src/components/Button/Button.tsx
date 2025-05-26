@@ -9,8 +9,6 @@ type Props = {
   disabled?: boolean;
   leftIcon?: IconName;
   rightIcon?: IconName;
-  iconColor?: string;
-  iconSize?: number;
 };
 
 export const Button = ({
@@ -21,8 +19,6 @@ export const Button = ({
   disabled = false,
   leftIcon,
   rightIcon,
-  iconColor = "currentColor",
-  iconSize = 12,
 }: Props) => {
   const classes = `${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`;
 
@@ -31,9 +27,7 @@ export const Button = ({
       {leftIcon && (
         <Icon
           name={leftIcon}
-          color={iconColor}
-          w={iconSize}
-          h={iconSize}
+          color="currentColor"
           className={styles.leftIcon}
         />
       )}
@@ -41,9 +35,7 @@ export const Button = ({
       {rightIcon && (
         <Icon
           name={rightIcon}
-          color={iconColor}
-          w={iconSize}
-          h={iconSize}
+          color="currentColor"
           className={styles.rightIcon}
         />
       )}

@@ -29,9 +29,6 @@ const meta: Meta<typeof Button> = {
       options: ["add"],
       control: { type: "select" },
     },
-    iconColor: {
-      control: { type: "color" },
-    },
   },
 };
 export default meta;
