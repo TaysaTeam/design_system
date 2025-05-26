@@ -18,54 +18,49 @@
   @extend .body2-md-600;
 
   // ===== Variants =====
-  // Primary variant
   &.primary {
-    // Contained type
     &.contained {
       border: none;
       background-color: var(--secondary-background-03);
     }
 
-    // Outlined type
     &.outlined {
       background-color: transparent;
       border: 1px solid var(--secondary-border-01);
       color: var(--primary-text-02);
+      transition: all 0.3s ease-in-out;
     }
 
-    // Text type
     &.text {
       background-color: transparent;
       color: var(--primary-text-02);
       border: none;
+      transition: all 0.3s ease-in-out;
     }
   }
 
-  // Secondary variant
   &.secondary {
-    // Contained type
     &.contained {
       background-color: var(--primary-background-03);
       color: var(--primary-text-02);
       border: none;
     }
 
-    // Outlined type
     &.outlined {
       background-color: transparent;
       border: 1px solid var(--primary-border-01);
       color: var(--primary-text-02);
+      transition: all 0.3s ease-in-out;
     }
 
-    // Text type
     &.text {
       color: var(--secondary-text-02);
       background-color: transparent;
       border: none;
+      transition: all 0.3s ease-in-out;
     }
   }
 
-  // ===== States =====
   // Hover state
   &:hover:not(:disabled) {
     font-weight: 700;
@@ -160,11 +155,4 @@
   &.small {
     @extend .body3-sm-600;
   }
-}
-
-// ===== Icons =====
-.leftIcon,
-.rightIcon {
-  height: var(--space-6);
-  width: var(--space-6);
 }

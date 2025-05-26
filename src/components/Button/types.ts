@@ -13,4 +13,5 @@ export type ButtonProps = PropsWithChildren & {
   disabled?: boolean;
   leftIcon?: IconName;
   rightIcon?: IconName;
+  className?: string;
 };
