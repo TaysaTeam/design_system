@@ -1,7 +1,8 @@
+import { PropsWithChildren } from "react";
 import { Icon, IconName } from "../Icon";
 import styles from "./_button.module.scss";
 
-type Props = {
+type Props = PropsWithChildren & {
   label: string;
   variant?: "primary" | "secondary";
   type?: "contained" | "outlined" | "text";
@@ -12,18 +13,19 @@ type Props = {
 };
 
 export const Button = ({
-  label,
+  children,
   variant = "primary",
   type = "contained",
   size = "medium",
   disabled = false,
   leftIcon,
   rightIcon,
+  ...rest
 }: Props) => {
   const classes = `${styles.button} ${styles[variant]} ${styles[type]} ${styles[size]}`;
 
   return (
-    <button className={classes} disabled={disabled}>
+    <button className={classes} disabled={disabled} {...rest}>
       {leftIcon && (
         <Icon
           name={leftIcon}
@@ -31,7 +33,7 @@ export const Button = ({
           className={styles.leftIcon}
         />
       )}
-      {label}
+      {children}
       {rightIcon && (
         <Icon
           name={rightIcon}
