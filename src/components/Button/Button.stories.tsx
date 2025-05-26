@@ -21,6 +21,14 @@ const meta: Meta<typeof Button> = {
     disabled: {
       control: { type: "boolean" },
     },
+    leftIcon: {
+      options: ["add"],
+      control: { type: "select" },
+    },
+    rightIcon: {
+      options: ["add"],
+      control: { type: "select" },
+    },
   },
 };
 export default meta;
@@ -101,5 +109,33 @@ export const DisabledText: Story = {
     variant: "primary",
     type: "text",
     disabled: true,
+  },
+};
+
+export const WithleftIcon: Story = {
+  args: {
+    label: "Start Icon",
+    variant: "primary",
+    type: "contained",
+    leftIcon: "add",
+  },
+};
+
+export const WithrightIcon: Story = {
+  args: {
+    label: "End Icon",
+    variant: "primary",
+    type: "contained",
+    rightIcon: "add",
+  },
+};
+
+export const WithBothIcons: Story = {
+  args: {
+    label: "Both Icons",
+    variant: "primary",
+    type: "contained",
+    leftIcon: "add",
+    rightIcon: "add",
   },
 };

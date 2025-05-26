@@ -1,19 +1,21 @@
 @use "/src/styles/spacing";
 @use "/src/styles/radius";
 @use "/src/styles/colors";
+@use "/src/styles/typography" as *;
 
 .button {
-  // Base styles
   color: white;
   cursor: pointer;
   border-radius: var(--radius-md);
-  background-color: var(--secondary-background-03);
+  background-color: var(--primary-background-03);
   display: inline-flex;
-  height: var(--space-12);
+  flex-shrink: 0;
   padding: var(--space-3) var(--space-6);
   align-items: center;
   justify-content: center;
+  gap: var(--space-2);
   border: 2px solid transparent;
+  @extend .body2-md-600;
 
   // ===== Variants =====
   // Primary variant
@@ -21,6 +23,7 @@
     // Contained type
     &.contained {
       border: none;
+      background-color: var(--secondary-background-03);
     }
 
     // Outlined type
@@ -44,6 +47,7 @@
     &.contained {
       background-color: var(--primary-background-03);
       color: var(--primary-text-02);
+      border: none;
     }
 
     // Outlined type
@@ -57,12 +61,15 @@
     &.text {
       color: var(--secondary-text-02);
       background-color: transparent;
+      border: none;
     }
   }
 
   // ===== States =====
   // Hover state
   &:hover:not(:disabled) {
+    font-weight: 700;
+
     &.primary {
       &.contained {
         background-color: var(--secondary-background-02);
@@ -143,22 +150,21 @@
 
   // ===== Sizes =====
   &.large {
-    height: 56px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
+    @extend .body1-lg-600;
   }
 
   &.medium {
-    font-size: var(--space-4);
-    font-weight: 600;
-    line-height: var(--space-6);
+    @extend .body2-md-600;
   }
 
   &.small {
-    height: var(--space-10);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: var(--space-6);
+    @extend .body3-sm-600;
   }
+}
+
+// ===== Icons =====
+.leftIcon,
+.rightIcon {
+  height: var(--space-6);
+  width: var(--space-6);
 }
