@@ -3,7 +3,7 @@
 @use "/src/styles/colors";
 @use "/src/styles/typography" as *;
 
-.inputContainer {
+.textareaContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,19 +19,27 @@
   }
 }
 
-.inputWrapper {
+.textareaWrapper {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-0_5);
   transition: all 0.3s ease;
   padding-top: 8px;
 
-  .input:hover:not(.disabled) ~ .label:not(.errorLabel) {
+  .cornerLine {
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+
+  .textarea:hover:not(.disabled) ~ .label:not(.errorLabel) {
     color: var(--secondary-light-400);
   }
 
-  .input {
+  .textarea {
     width: 100%;
     font-family: inherit;
     @extend .body2-md-600;
@@ -43,6 +51,7 @@
     background: transparent;
     z-index: 1;
     position: relative;
+    resize: vertical;
 
     // States
     &:hover:not(.disabled) {
@@ -86,44 +95,25 @@
       padding-right: var(--space-10) !important;
     }
 
-    &.small {
-      padding: var(--space-2) var(--space-6);
-    }
-
-    &.medium {
-      padding: var(--space-3) var(--space-4);
-    }
-
-    &.large {
-      padding: var(--space-4) var(--space-1);
+    &.longText {
+      padding: var(--space-2) var(--space-4);
+      min-height: var(--space-32);
     }
 
     // For floating label effect
     &.hasValue + .label,
     &:focus + .label {
-      // small size
-      transform: translateY(-31px) scale(0.85);
+      transform: translateY(-30px) scale(0.85);
       padding: 0 var(--space-2);
+      background: white;
       z-index: 2;
       right: var(--space-3);
-    }
-
-    // Medium size
-    &.medium.hasValue + .label,
-    &.medium:focus + .label {
-      transform: translateY(-36px) scale(0.85);
-    }
-
-    // Large size
-    &.large.hasValue + .label,
-    &.large:focus + .label {
-      transform: translateY(-40px) scale(0.85);
     }
   }
 
   .label {
     position: absolute;
-    top: 58%;
+    top: 28px;
     right: var(--space-4);
     transform: translateY(-50%);
     transition: all 0.2s ease;
@@ -140,12 +130,10 @@
 
     // position when icons are present
     &.hasLeftIconLabel {
-      // for left icon
       right: calc(var(--space-4) + var(--space-6));
     }
 
     &.hasRightIconLabel {
-      // for right icon
       right: calc(var(--space-4) + var(--space-6));
     }
 
@@ -155,41 +143,11 @@
     }
 
     &.floating {
-      transform: translateY(-28px) scale(0.85);
-      // Default for small
+      transform: translateY(-40px) scale(0.85);
       z-index: 2;
       right: var(--space-3);
       padding: 0 var(--space-1);
 
-      // when icons are present
-      &.hasLeftIconLabel {
-        // for left icon
-        right: calc(var(--space-3) + var(--space-0_5));
-      }
-
-      &.hasRightIconLabel {
-        // for right icon
-        right: calc(var(--space-3) + var(--space-0_5));
-      }
-    }
-
-    // Medium size
-    &.floating.medium {
-      transform: translateY(-32px) scale(0.85);
-      // position when icons are present
-      &.hasLeftIconLabel {
-        right: calc(var(--space-3) + var(--space-0_5));
-      }
-
-      &.hasRightIconLabel {
-        right: calc(var(--space-3) + var(--space-0_5));
-      }
-    }
-
-    // Large size
-    &.floating.large {
-      transform: translateY(-36px) scale(0.85);
-      // position when icons are present
       &.hasLeftIconLabel {
         right: calc(var(--space-3) + var(--space-0_5));
       }
@@ -208,6 +166,7 @@
     justify-content: center;
     cursor: pointer;
     z-index: 3;
+    top: 16px;
 
     &.disabled {
       color: var(--neutral-foreground-02);
@@ -224,7 +183,7 @@
   }
 }
 
-.inputWrapper:hover ~ .helperText:not(.error):not(.disabled) {
+.textareaWrapper:hover ~ .helperText:not(.error):not(.disabled) {
   color: var(--secondary-light-400);
 }
 

@@ -1,13 +1,19 @@
-import React, { forwardRef, useState, useEffect, useRef } from "react";
+import React, {
+  ComponentPropsWithRef,
+  forwardRef,
+  useState,
+  useEffect,
+  useRef,
+} from "react";
 import { clsx } from "clsx";
-import styles from "./_input.module.scss";
-import { Icon, type IconName } from "../Icon";
-import { InputProps } from "./type";
+import styles from "./_textarea.module.scss";
+import { Icon, IconName } from "../Icon";
+import { CornerLine } from "../Icons/CornerLine";
+import { TextareaProps } from "./type";
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(
+export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   (
     {
-      inputSize = "medium",
       leftIconName,
       rightIconName,
       className,
@@ -16,23 +22,28 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       helperText,
       disabled = false,
       value,
+      rows = 4,
       ...rest
     },
     ref
   ) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isFloating, setIsFloating] = useState(false);
-    const inputRef = useRef<HTMLInputElement>(null);
+    const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     useEffect(() => {
       setIsFloating(
-        !!(isFocused || value || (inputRef.current && inputRef.current.value))
+        !!(
+          isFocused ||
+          value ||
+          (textareaRef.current && textareaRef.current.value)
+        )
       );
     }, [isFocused, value]);
 
     return (
-      <div className={styles.inputContainer}>
-        <div className={styles.inputWrapper}>
+      <div className={styles.textareaContainer}>
+        <div className={styles.textareaWrapper}>
           {leftIconName && (
             <span
               className={clsx(styles.leftIcon, disabled && styles.disabled)}
@@ -46,14 +57,14 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             </span>
           )}
 
-          <input
+          <textarea
             ref={(node) => {
               if (typeof ref === "function") ref(node);
               else if (ref) ref.current = node;
             }}
             className={clsx(
-              styles.input,
-              styles[inputSize],
+              styles.textarea,
+              styles.longText,
               error && styles.errorBorder,
               disabled && styles.disabled,
               leftIconName && styles.hasLeftIcon,
@@ -71,6 +82,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               rest.onBlur?.(e);
             }}
             value={value}
+            rows={rows}
             {...rest}
             placeholder={label ? " " : rest.placeholder}
           />
@@ -85,7 +97,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
                 (rightIconName || error) && styles.hasRightIconLabel,
                 disabled && styles.disabledLabel
               )}
-              onClick={() => inputRef.current?.focus()}
+              onClick={() => textareaRef.current?.focus()}
             >
               {label}
             </label>
@@ -103,6 +115,22 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               />
             </span>
           )}
+
+          <div className={styles.cornerLine}>
+            <CornerLine
+              w={14}
+              h={15}
+              color={
+                error
+                  ? "var(--error-border-01)"
+                  : disabled
+                  ? "var(--neutral-foreground-02)"
+                  : isFocused
+                  ? "var(--primary-border-01)"
+                  : "var(--secondary-border-04)"
+              }
+            />
+          </div>
         </div>
         {(error || helperText) && (
           <div
@@ -121,4 +149,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-Input.displayName = "Input";
+Textarea.displayName = "Textarea";
