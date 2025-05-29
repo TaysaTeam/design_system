@@ -3,12 +3,14 @@ import { Add } from "./Icons/Add";
 import { Search } from "./Icons/Search";
 import { Remove } from "./Icons/Remove";
 import { RemoveRed } from "./Icons/RemoveRed";
+import { CornerLine } from "./Icons/CornerLine";
 
 const icons = {
   add: Add,
   search: Search,
   remove: Remove,
-  removeRed:RemoveRed
+  removeRed: RemoveRed,
+  cornerline: CornerLine,
 };
 
 export type IconName = keyof typeof icons;

@@ -1,19 +1,15 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Input } from "./Input";
+import { Textarea } from "./Textarea";
 
 const containerStyle = {
   width: "322px",
   margin: "0 auto",
 };
 
-const meta: Meta<typeof Input> = {
-  title: "Components/Input",
-  component: Input,
+const meta: Meta<typeof Textarea> = {
+  title: "Components/Textarea",
+  component: Textarea,
   argTypes: {
-    inputSize: {
-      control: { type: "select" },
-      options: ["small", "medium", "large"],
-    },
     disabled: { control: "boolean" },
     leftIconName: {
       control: { type: "select" },
@@ -21,9 +17,10 @@ const meta: Meta<typeof Input> = {
     },
     rightIconName: {
       control: { type: "select" },
-      options: ["add", "search", "remove"],
+      options: ["search", "remove"],
     },
     helperText: { control: "text" },
+    rows: { control: "number" },
   },
   decorators: [
     (Story) => (
@@ -36,36 +33,18 @@ const meta: Meta<typeof Input> = {
     leftIconName: "search",
     rightIconName: "remove",
     helperText: "متن کمکی",
+    rows: 4,
   },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Input>;
+type Story = StoryObj<typeof Textarea>;
 
-export const Small: Story = {
+export const Enable: Story = {
   args: {
     label: "تایتل",
-    inputSize: "small",
-    placeholder: "متن",
-    helperText: "متن کمکی",
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    label: "تایتل",
-    inputSize: "medium",
-    placeholder: "متن",
-    helperText: "متن کمکی",
-  },
-};
-
-export const Large: Story = {
-  args: {
-    label: "تایتل",
-    inputSize: "large",
-    placeholder: "متن",
+    placeholder: "متن طولانی...",
     helperText: "متن کمکی",
   },
 };
@@ -74,7 +53,7 @@ export const ErrorState: Story = {
   args: {
     label: "تایتل",
     error: "متن کمکی",
-    placeholder: "متن",
+    placeholder: "متن طولانی...",
   },
 };
 
@@ -82,7 +61,7 @@ export const Disabled: Story = {
   args: {
     label: "تایتل",
     disabled: true,
-    placeholder: "متن",
+    placeholder: "متن طولانی...",
     helperText: "متن کمکی",
   },
 };
