@@ -1,8 +1,14 @@
 import React from "react";
 import { Add } from "./Icons/Add";
+import { Search } from "./Icons/Search";
+import { Remove } from "./Icons/Remove";
+import { RemoveRed } from "./Icons/RemoveRed";
 
 const icons = {
-  add:Add
+  add: Add,
+  search: Search,
+  remove: Remove,
+  removeRed:RemoveRed
 };
 
 export type IconName = keyof typeof icons;
