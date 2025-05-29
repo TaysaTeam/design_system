@@ -1,0 +1,248 @@
+@use "/src/styles/spacing";
+@use "/src/styles/radius";
+@use "/src/styles/colors";
+@use "/src/styles/typography" as *;
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+  max-width: var(--space-80);
+  margin-bottom: 1rem;
+
+  &:focus-within {
+    .label:not(.errorLabel) {
+      color: var(--primary-border-01);
+    }
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-0_5);
+  transition: all 0.3s ease;
+  padding-top: 8px;
+
+  .input:hover:not(.disabled) ~ .label:not(.errorLabel) {
+    color: var(--secondary-light-400);
+  }
+
+  .input {
+    width: 100%;
+    font-family: inherit;
+    @extend .body2-md-600;
+    color: var(--secondary-light-600);
+    text-align: right;
+    transition: all 0.3s ease;
+    border-radius: var(--space-2);
+    border: 1.5px solid var(--secondary-border-04);
+    background: transparent;
+    z-index: 1;
+    position: relative;
+
+    // States
+    &:hover:not(.disabled) {
+      border: 1.5px solid var(--secondary-border-03);
+
+      &::placeholder {
+        color: var(--secondary-light-400);
+      }
+    }
+
+    &:focus:not(.disabled) {
+      outline: none;
+      border: 1.5px solid var(--primary-border-01);
+      border-radius: var(--space-2);
+    }
+
+    &.errorBorder {
+      border: 1.5px solid var(--error-border-01);
+      &:focus,
+      &:hover {
+        border: 1.5px solid var(--error-border-01);
+      }
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      border: 1.5px solid var(--neutral-border-02);
+      color: var(--neutral-border-02);
+      background-color: transparent;
+
+      &::placeholder {
+        color: var(--neutral-foreground-02);
+      }
+    }
+
+    &.hasLeftIcon {
+      padding-left: var(--space-10) !important;
+    }
+
+    &.hasRightIcon {
+      padding-right: var(--space-10) !important;
+    }
+
+    &.small {
+      padding: var(--space-2) var(--space-6);
+    }
+
+    &.medium {
+      padding: var(--space-3) var(--space-4);
+    }
+
+    &.large {
+      padding: var(--space-4) var(--space-1);
+    }
+
+    // For floating label effect
+    &.hasValue + .label,
+    &:focus + .label {
+      // small size
+      transform: translateY(-31px) scale(0.85);
+      padding: 0 var(--space-2);
+      background: white;
+      z-index: 2;
+      right: var(--space-3);
+    }
+
+    // Medium size
+    &.medium.hasValue + .label,
+    &.medium:focus + .label {
+      transform: translateY(-36px) scale(0.85);
+    }
+
+    // Large size
+    &.large.hasValue + .label,
+    &.large:focus + .label {
+      transform: translateY(-40px) scale(0.85);
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: 58%;
+    right: var(--space-4);
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    transform-origin: right center;
+    pointer-events: none;
+    color: var(--secondary-light-600);
+    @extend .body3-sm-600;
+    padding: 0 var(--space-0_5);
+    z-index: 1;
+
+    &.disabledLabel {
+      color: #c7c7c7 !important;
+    }
+
+    // position when icons are present
+    &.hasLeftIconLabel {
+      // for left icon
+      right: calc(var(--space-4) + var(--space-6));
+    }
+
+    &.hasRightIconLabel {
+      // for right icon
+      right: calc(var(--space-4) + var(--space-6));
+    }
+
+    &.errorLabel {
+      color: var(--error-text-01);
+      @extend .caption1-xs-600;
+    }
+
+    &.floating {
+      transform: translateY(-28px) scale(0.85);
+      // Default for small
+      z-index: 2;
+      right: var(--space-3);
+      padding: 0 var(--space-1);
+
+      // when icons are present
+      &.hasLeftIconLabel {
+        // for left icon
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+
+      &.hasRightIconLabel {
+        // for right icon
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+    }
+
+    // Medium size
+    &.floating.medium {
+      transform: translateY(-32px) scale(0.85);
+      // position when icons are present
+      &.hasLeftIconLabel {
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+
+      &.hasRightIconLabel {
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+    }
+
+    // Large size
+    &.floating.large {
+      transform: translateY(-36px) scale(0.85);
+      // position when icons are present
+      &.hasLeftIconLabel {
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+
+      &.hasRightIconLabel {
+        right: calc(var(--space-3) + var(--space-0_5));
+      }
+    }
+  }
+
+  .rightIcon,
+  .leftIcon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+
+    &.disabled {
+      color: var(--neutral-foreground-02);
+      cursor: not-allowed;
+    }
+  }
+
+  .rightIcon {
+    left: var(--space-3);
+  }
+
+  .leftIcon {
+    right: var(--space-3);
+  }
+}
+
+.inputWrapper:hover ~ .helperText:not(.error):not(.disabled) {
+  color: var(--secondary-light-400);
+}
+
+.helperText {
+  display: flex;
+  justify-content: right;
+  padding: 0px var(--space-4);
+  text-align: right;
+  @extend .caption1-xs-600;
+  color: var(--secondary-light-600);
+  transition: color 0.3s ease;
+
+  &.error {
+    color: var(--error-border-01);
+  }
+
+  &.disabled {
+    color: var(--neutral-foreground-02);
+  }
+}
