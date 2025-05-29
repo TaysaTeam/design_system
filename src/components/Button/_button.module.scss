@@ -1,7 +1,4 @@
-@use "/src/styles/spacing";
-@use "/src/styles/radius";
-@use "/src/styles/colors";
-@use "/src/styles/typography" as *;
+@use '/src/styles/main.scss' as *;
 
 .button {
   color: white;
