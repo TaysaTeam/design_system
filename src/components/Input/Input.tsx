@@ -58,6 +58,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               disabled && styles.disabled,
               leftIconName && styles.hasLeftIcon,
               (rightIconName || error) && styles.hasRightIcon,
+              isFocused && error && "errorFocused",
               isFloating && styles.hasValue,
               className
             )}
@@ -93,11 +94,21 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 
           {(error || rightIconName) && (
             <span
-              className={clsx(styles.rightIcon, disabled && styles.disabled)}
+              className={clsx(
+                styles.rightIcon,
+                disabled && styles.disabled,
+                error && isFocused && styles.errorFocusedIcon
+              )}
             >
               <Icon
                 name={error ? "removeRed" : (rightIconName as IconName)}
-                color={error ? "#D92D20" : "currentColor"}
+                color={
+                  error && isFocused
+                    ? "var(--secondary-light-600)"
+                    : error
+                    ? "var(--error-border-01)"
+                    : "currentColor"
+                }
                 w={24}
                 h={24}
               />
@@ -109,6 +120,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             className={clsx(
               styles.helperText,
               error && styles.error,
+              error && isFocused && styles.errorFocusedHelper,
               isFocused && !error && styles.focused,
               disabled && styles.disabled
             )}

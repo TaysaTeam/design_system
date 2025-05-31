@@ -1,4 +1,4 @@
-@use '/src/styles/main.scss' as *;
+@use "/src/styles/main.scss" as *;
 
 .button {
   color: var(--primary-text-01);
@@ -7,12 +7,9 @@
   background-color: var(--primary-background-03);
   display: inline-flex;
   flex-shrink: 0;
-  padding: var(--space-3) var(--space-6);
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
   border: 2px solid transparent;
-  @extend .body2-md-600;
 
   // ===== Variants =====
   &.primary {
@@ -60,8 +57,6 @@
 
   // Hover state
   &:hover:not(:disabled) {
-    font-weight: 700;
-
     &.primary {
       &.contained {
         background-color: var(--secondary-background-02);
@@ -142,14 +137,17 @@
 
   // ===== Sizes =====
   &.large {
-    @extend .body1-lg-600;
+    width: calc(var(--space-12) + var(--space-2));
+    height: calc(var(--space-12) + var(--space-2));
   }
 
   &.medium {
-    @extend .body2-md-600;
+    width: var(--space-12);
+    height: var(--space-12);
   }
 
   &.small {
-    @extend .body3-sm-600;
+    width: var(--space-10);
+    height: var(--space-10);
   }
 }

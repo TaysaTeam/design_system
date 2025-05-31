@@ -7,11 +7,16 @@
   gap: var(--space-2);
   width: 100%;
   max-width: var(--space-80);
-  margin-bottom: 1rem;
 
   &:focus-within {
     .label:not(.errorLabel) {
       color: var(--primary-border-01);
+    }
+  }
+
+  &:focus-within {
+    .label.errorLabel {
+      color: var(--secondary-text-01) !important;
     }
   }
 }
@@ -22,14 +27,18 @@
   align-items: flex-start;
   gap: var(--space-0_5);
   transition: all 0.3s ease;
-  padding-top: 8px;
+  padding-top: var(--space-2);
 
   .cornerLine {
     position: absolute;
-    bottom: -2px;
-    left: 2px;
+    bottom: calc(var(--space-1) - var(--space-2));
+    left: 1px;
     z-index: 2;
     transition: color 0.3s ease;
+
+    .textarea:hover:not(.disabled) ~ & {
+      color: var(--secondary-foreground-02) !important;
+    }
   }
 
   .textarea:hover:not(.disabled) ~ .label:not(.errorLabel) {
@@ -49,6 +58,7 @@
     z-index: 1;
     position: relative;
     resize: vertical;
+    direction: rtl;
 
     // States
     &:hover:not(.disabled) {
@@ -70,6 +80,10 @@
       &:focus,
       &:hover {
         border: 1.5px solid var(--error-border-01);
+      }
+
+      &:focus:not(.disabled) {
+        border: 1.5px solid var(--primary-border-01);
       }
     }
 
@@ -102,7 +116,7 @@
     &:focus + .label {
       transform: translateY(-30px) scale(0.85);
       padding: 0 var(--space-2);
-      background: white;
+      background: var(--primary-text-01);
       z-index: 2;
       right: var(--space-3);
     }
@@ -199,5 +213,9 @@
 
   &.disabled {
     color: var(--neutral-foreground-02);
+  }
+
+  &.errorFocusedHelper {
+    color: var(--secondary-light-600) !important;
   }
 }

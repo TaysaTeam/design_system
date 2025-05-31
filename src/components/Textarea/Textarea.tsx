@@ -1,10 +1,4 @@
-import React, {
-  ComponentPropsWithRef,
-  forwardRef,
-  useState,
-  useEffect,
-  useRef,
-} from "react";
+import React, { forwardRef, useState, useEffect, useRef } from "react";
 import { clsx } from "clsx";
 import styles from "./_textarea.module.scss";
 import { Icon, IconName } from "../Icon";
@@ -92,6 +86,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
               className={clsx(
                 styles.label,
                 error && styles.errorLabel,
+                error && isFocused && styles.errorFocusedLabel,
                 isFloating && styles.floating,
                 leftIconName && styles.hasLeftIconLabel,
                 (rightIconName || error) && styles.hasRightIconLabel,
@@ -109,7 +104,13 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
             >
               <Icon
                 name={error ? "removeRed" : (rightIconName as IconName)}
-                color={error ? "#D92D20" : "currentColor"}
+                color={
+                  error && isFocused
+                    ? "currentColor"
+                    : error
+                    ? "var(--error-border-01)"
+                    : "currentColor"
+                }
                 w={24}
                 h={24}
               />
@@ -121,12 +122,14 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
               w={14}
               h={15}
               color={
-                error
+                error && isFocused
+                  ? "var(--secondary-light-600)"
+                  : error
                   ? "var(--error-border-01)"
                   : disabled
                   ? "var(--neutral-foreground-02)"
                   : isFocused
-                  ? "var(--primary-border-01)"
+                  ? "var(--secondary-foreground-02)"
                   : "var(--secondary-border-04)"
               }
             />
@@ -137,6 +140,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
             className={clsx(
               styles.helperText,
               error && styles.error,
+              error && isFocused && styles.errorFocusedHelper,
               isFocused && !error && styles.focused,
               disabled && styles.disabled
             )}
