@@ -12,7 +12,7 @@ const icons = {
   remove: Remove,
   removeRed: RemoveRed,
   cornerline: CornerLine,
-  iconbtn:IconBtn
+  iconbtn: IconBtn,
 };
 
 export type IconName = keyof typeof icons;
