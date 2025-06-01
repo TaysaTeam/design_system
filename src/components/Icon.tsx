@@ -4,7 +4,7 @@ import { Search } from "./Icons/Search";
 import { Remove } from "./Icons/Remove";
 import { RemoveRed } from "./Icons/RemoveRed";
 import { CornerLine } from "./Icons/CornerLine";
-import { IconBtn } from "./Icons/IconBtn";
+import { IconButton } from "./Icons/IconButton";
 
 const icons = {
   add: Add,
@@ -12,7 +12,7 @@ const icons = {
   remove: Remove,
   removeRed: RemoveRed,
   cornerline: CornerLine,
-  iconbtn:IconBtn
+  iconbtn:IconButton
 };
 
 export type IconName = keyof typeof icons;

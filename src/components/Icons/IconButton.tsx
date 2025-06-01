@@ -1,12 +1,12 @@
 import React from "react";
 
-type IconBtnProps = {
+type IconButtonProps = {
   w?: number | string;
   h?: number | string;
   color?: string;
 };
 
-export const IconBtn: React.FC<IconBtnProps> = ({
+export const IconButton: React.FC<IconButtonProps> = ({
   w = 14,
   h = 15,
   color = "currentColor",

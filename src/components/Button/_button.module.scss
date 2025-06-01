@@ -1,4 +1,4 @@
-@use '/src/styles/main.scss' as *;
+@use "/src/styles/main.scss" as *;
 
 .button {
   color: var(--primary-text-01);
@@ -19,6 +19,7 @@
     &.contained {
       border: none;
       background-color: var(--secondary-background-03);
+      transition: all 0.3s ease-in-out;
     }
 
     &.outlined {

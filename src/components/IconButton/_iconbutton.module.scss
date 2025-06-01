@@ -16,6 +16,7 @@
     &.contained {
       border: none;
       background-color: var(--secondary-background-03);
+      transition: all 0.3s ease-in-out;
     }
 
     &.outlined {
