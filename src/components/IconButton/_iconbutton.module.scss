@@ -16,6 +16,7 @@
     &.contained {
       border: none;
       background-color: var(--secondary-background-03);
+      transition: all 0.3s ease-in-out;
     }
 
     &.outlined {
@@ -38,6 +39,7 @@
       background-color: var(--primary-background-03);
       color: var(--primary-text-02);
       border: none;
+      transition: all 0.3s ease-in-out;
     }
 
     &.outlined {
@@ -87,6 +89,7 @@
 
   // Pressed state
   &:active:not(:disabled) {
+    transition: all 0.4s ease;
     &.primary {
       &.contained {
         background-color: var(--secondary-background-03);
