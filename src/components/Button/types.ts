@@ -6,8 +6,7 @@ type Style = "contained" | "outlined" | "text";
 type Size = "large" | "medium" | "small";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  label: string;
-  variant: Variant;
+  variant?: Variant;
   style?: Style;
   size?: Size;
   disabled?: boolean;
