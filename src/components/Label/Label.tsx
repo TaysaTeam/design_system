@@ -13,19 +13,16 @@ const Label: React.FC<LabelProps> = ({
   icon,
   ...rest
 }) => {
+  const labelClasses = clsx(
+    styles.label,
+    styles[`${variant}`],
+    styles[`${color}-${variant}`],
+    styles[`${size}`],
+    className
+  );
   return (
-    <span
-      className={clsx(
-        styles.label,
-        styles[`${variant}`],
-        styles[`${color}-${variant}`],
-        styles[`${size}`],
-        className
-      )}
-      {...rest}
-    >
+    <span className={labelClasses} {...rest}>
       {children}
-      {/* {icon && <span className={styles.icon}>{icon}</span>} */}
       {icon && <Icon name={icon} color="currentColor" w={24} h={24} />}
     </span>
   );
