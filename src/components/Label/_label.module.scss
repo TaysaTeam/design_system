@@ -1,0 +1,136 @@
+@use "/src/styles/main.scss" as *;
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+// Size variants
+.small {
+  padding: 0px var(--space-2);
+  border-radius: var(--radius-xs);
+}
+
+.medium {
+  padding: var(--space-0_5) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.large {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+}
+
+
+// Base variant styles
+%variant-base {
+  border: 0.5px solid;
+  @extend .caption1-xs-600;
+}
+
+@mixin color-variant($name, $fill-bg, $fill-border, $fill-color, $outline-border, $outline-color) {
+  .#{$name}-fill {
+    @extend %variant-base;
+    border-color: #{$fill-border};
+    background: #{$fill-bg};
+    color: #{$fill-color};
+  }
+  
+  .#{$name}-outline {
+    @extend %variant-base;
+    border-color: #{$outline-border};
+    color: #{$outline-color};
+  }
+}
+
+// color variants
+@include color-variant(
+  'brand',
+  var(--primary-background-01),
+  var(--primary-border-01),
+  var(--secondary-text-02),
+  var(--primary-border-01),
+  var(--secondary-text-01)
+);
+
+@include color-variant(
+  'green',
+  var(--success-background-01),
+  var(--success-border-02),
+  var(--success-text-02),
+  var(--success-border-02),
+  var(--success-text-02)
+);
+
+@include color-variant(
+  'teal',
+  var(--teal-50),
+  var(--teal-800),
+  var(--teal-800),
+  var(--teal-600),
+  var(--teal-600)
+);
+
+@include color-variant(
+  'blue-dark',
+  var(--info-background-01),
+  var(--info-border-02),
+  var(--info-text-02),
+  var(--info-border-02),
+  var(--info-text-02)
+);
+
+@include color-variant(
+  'violet',
+  var(--indigo-50),
+  var(--violet-800),
+  var(--violet-800),
+  var(--violet-600),
+  var(--violet-600)
+);
+
+@include color-variant(
+  'fuchsia',
+  var(--fuchsia-50),
+  var(--fuchsia-800),
+  var(--fuchsia-800),
+  var(--fuchsia-600),
+  var(--fuchsia-600)
+);
+
+@include color-variant(
+  'pink',
+  var(--pink-50),
+  var(--pink-800),
+  var(--pink-800),
+  var(--pink-600),
+  var(--pink-600)
+);
+
+@include color-variant(
+  'rose',
+  var(--rose-50),
+  var(--rose-800),
+  var(--rose-800),
+  var(--rose-600),
+  var(--rose-600)
+);
+
+@include color-variant(
+  'orange',
+  var(--warning-background-01),
+  var(--warning-border-02),
+  var(--warning-text-02),
+  var(--warning-border-02),
+  var(--warning-text-02)
+);
+
+@include color-variant(
+  'yellow',
+  var(--yellow-50),
+  var(--yellow-800),
+  var(--yellow-800),
+  var(--yellow-600),
+  var(--yellow-600)
+);

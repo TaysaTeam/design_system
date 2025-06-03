@@ -22,7 +22,7 @@ const meta: Meta<typeof IconButton> = {
       control: { type: "boolean" },
     },
     icon: {
-      options: ["iconbtn"],
+      options: ["iconButton"],
       control: { type: "select" },
     },
   },
@@ -33,7 +33,7 @@ type Story = StoryObj<typeof IconButton>;
 
 export const PrimaryContained: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "contained",
   },
@@ -41,7 +41,7 @@ export const PrimaryContained: Story = {
 
 export const PrimaryOutlined: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "outlined",
   },
@@ -49,7 +49,7 @@ export const PrimaryOutlined: Story = {
 
 export const PrimaryText: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "text",
   },
@@ -58,7 +58,7 @@ export const PrimaryText: Story = {
 // Secondary Buttons
 export const SecondaryContained: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "secondary",
     type: "contained",
   },
@@ -66,7 +66,7 @@ export const SecondaryContained: Story = {
 
 export const SecondaryOutlined: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "secondary",
     type: "outlined",
   },
@@ -74,7 +74,7 @@ export const SecondaryOutlined: Story = {
 
 export const SecondaryText: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "secondary",
     type: "text",
   },
@@ -83,7 +83,7 @@ export const SecondaryText: Story = {
 // Disabled States
 export const DisabledContained: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "contained",
     disabled: true,
@@ -92,7 +92,7 @@ export const DisabledContained: Story = {
 
 export const DisabledOutlined: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "outlined",
     disabled: true,
@@ -101,7 +101,7 @@ export const DisabledOutlined: Story = {
 
 export const DisabledText: Story = {
   args: {
-    icon: "iconbtn",
+    icon: "iconButton",
     variant: "primary",
     type: "text",
     disabled: true,
