@@ -39,7 +39,7 @@ export const PrimaryContained: Story = {
   args: {
     children: "Primary Contained",
     variant: "primary",
-    type: "contained",
+    style: "contained",
   },
 };
 
@@ -47,7 +47,7 @@ export const PrimaryOutlined: Story = {
   args: {
     children: "Primary Outlined",
     variant: "primary",
-    type: "outlined",
+    style: "outlined",
   },
 };
 
@@ -55,7 +55,7 @@ export const PrimaryText: Story = {
   args: {
     children: "Primary Text",
     variant: "primary",
-    type: "text",
+    style: "text",
   },
 };
 
@@ -64,7 +64,7 @@ export const SecondaryContained: Story = {
   args: {
     children: "Secondary Contained",
     variant: "secondary",
-    type: "contained",
+    style: "contained",
   },
 };
 
@@ -72,7 +72,7 @@ export const SecondaryOutlined: Story = {
   args: {
     children: "Secondary Outlined",
     variant: "secondary",
-    type: "outlined",
+    style: "outlined",
   },
 };
 
@@ -80,7 +80,7 @@ export const SecondaryText: Story = {
   args: {
     children: "Secondary Text",
     variant: "secondary",
-    type: "text",
+    style: "text",
   },
 };
 
@@ -89,7 +89,7 @@ export const DisabledContained: Story = {
   args: {
     children: "Disabled Contained",
     variant: "primary",
-    type: "contained",
+    style: "contained",
     disabled: true,
   },
 };
@@ -98,7 +98,7 @@ export const DisabledOutlined: Story = {
   args: {
     children: "Disabled Outlined",
     variant: "primary",
-    type: "outlined",
+    style: "outlined",
     disabled: true,
   },
 };
@@ -107,7 +107,7 @@ export const DisabledText: Story = {
   args: {
     children: "Disabled Text",
     variant: "primary",
-    type: "text",
+    style: "text",
     disabled: true,
   },
 };
@@ -116,7 +116,7 @@ export const WithleftIcon: Story = {
   args: {
     children: "Start Icon",
     variant: "primary",
-    type: "contained",
+    style: "contained",
     leftIcon: "add",
   },
 };
@@ -125,7 +125,7 @@ export const WithrightIcon: Story = {
   args: {
     children: "End Icon",
     variant: "primary",
-    type: "contained",
+    style: "contained",
     rightIcon: "add",
   },
 };
@@ -134,7 +134,7 @@ export const WithBothIcons: Story = {
   args: {
     children: "Both Icons",
     variant: "primary",
-    type: "contained",
+    style: "contained",
     leftIcon: "add",
     rightIcon: "add",
   },

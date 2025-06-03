@@ -6,7 +6,7 @@ import { ButtonProps } from "./types";
 export const Button = ({
   children,
   variant = "primary",
-  type = "contained",
+  style = "contained",
   size = "medium",
   disabled = false,
   leftIcon,
@@ -17,7 +17,7 @@ export const Button = ({
   const classes = clsx(
     styles.button,
     styles[variant],
-    styles[type],
+    styles[style],
     styles[size],
     { [styles.withIcon]: leftIcon || rightIcon },
     className

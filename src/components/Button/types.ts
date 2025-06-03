@@ -1,15 +1,15 @@
-import { PropsWithChildren } from "react";
+import { ButtonHTMLAttributes, PropsWithChildren } from "react";
 import { IconName } from "../Icon";
 
 type Variant = "primary" | "secondary";
-type type = "contained" | "outlined" | "text";
-type size = "large" | "medium" | "small";
+type Style = "contained" | "outlined" | "text";
+type Size = "large" | "medium" | "small";
 
-export type ButtonProps = PropsWithChildren & {
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label: string;
   variant: Variant;
-  type?: type;
-  size?: size;
+  style?: Style;
+  size?: Size;
   disabled?: boolean;
   leftIcon?: IconName;
   rightIcon?: IconName;
