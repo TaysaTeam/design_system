@@ -5,14 +5,22 @@ import path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: "",
+        includePaths: ["src"], 
+      },
+    },
+  },
   plugins: [
     react(),
     dts(),
     viteStaticCopy({
       targets: [
         {
-          src: "src/styles/**/*", 
-          dest: "styles",         
+          src: "src/styles/**/*",
+          dest: "styles",
         },
       ],
     }),

@@ -1,4 +1,6 @@
 :root {
+  --base-white: #ffffff;
+  --base-black: #000000;
   --brand-25: #f5feff;
   --brand-50: #ecfdff;
   --brand-100: #cff9fe;
@@ -9,7 +11,7 @@
   --brand-600: #088ab2;
   --brand-700: #0e7090;
   --brand-800: #155b75;
-  --brand-900: #155b75;
+  --brand-900: #164c63;
   --brand-950: #0d2d3a;
   --secondary-light-25: #fbfbfb;
   --secondary-light-50: #f2f2f2;
@@ -23,18 +25,6 @@
   --secondary-light-800: #1c1c1c;
   --secondary-light-900: #050505;
   --secondary-light-950: #000000;
-  --info-25: #f5faff;
-  --info-50: #eff8ff;
-  --info-100: #d1e9ff;
-  --info-200: #b2ddff;
-  --info-300: #84caff;
-  --info-400: #53b1fd;
-  --info-500: #2e90fa;
-  --info-600: #1570ef;
-  --info-700: #175cd3;
-  --info-800: #1849a9;
-  --info-900: #194185;
-  --info-950: #102a56;
   --gray-light-25: #fcfcfd;
   --gray-light-50: #f9fafb;
   --gray-light-100: #f2f4f7;
@@ -52,13 +42,86 @@
   --gray-primary-100: #f9fafb;
   --gray-primary-200: #f7f9fa;
   --gray-primary-300: #f5f7f9;
-  --gray-primary-400: #94969c;
-  --gray-primary-500: #f2f5f7;
+  --gray-primary-400: #f2f5f7;
+  --gray-primary-500: #f0f3f6;
   --gray-primary-600: #eef2f5;
   --gray-primary-700: #c6c9cc;
   --gray-primary-800: #77797a;
   --gray-primary-900: #4f5051;
   --gray-primary-950: #272828;
+  --primary-border-01: #22ccee;
+  --primary-border-02: #06aed4;
+  --primary-border-03: #088ab2;
+  --primary-border-04: #155b75;
+  --secondary-border-01: #050505;
+  --secondary-border-02: #393939;
+  --secondary-border-03: #565656;
+  --secondary-border-04: #8f8f8f;
+  --neutral-border-01: #1c1c1c;
+  --neutral-border-02: #c7c7c7;
+  --neutral-border-03: #565656;
+  --success-border-01: #17b26a;
+  --success-border-02: #067647;
+  --info-border-01: #1570ef;
+  --info-border-02: #1849a9;
+  --warning-border-01: #f79009;
+  --warning-border-02: #dc6803;
+  --error-border-01: #d92d20;
+  --error-border-02: #912018;
+  --primary-background-01: #ecfdff;
+  --primary-background-02: #06aed4;
+  --primary-background-03: #088ab2;
+  --primary-background-04: #0e6f90;
+  --secondary-background-01: #c7c7c7;
+  --secondary-background-02: #565656;
+  --secondary-background-03: #050505;
+  --neutral-background-01: #000000;
+  --neutral-background-02: #393939;
+  --neutral-background-03: #8f8f8f;
+  --success-background-01: #ecfdf3;
+  --success-background-02: #75e0a7;
+  --success-background-03: #17b26a;
+  --success-background-04: #067647;
+  --info-background-01: #eff8ff;
+  --info-background-02: #53b1fd;
+  --info-background-03: #1570ef;
+  --info-background-04: #1849a9;
+  --warning-background-01: #fffaeb;
+  --warning-background-02: #fedf89;
+  --warning-background-03: #f79009;
+  --warning-background-04: #dc6803;
+  --error-background-01: #fef3f2;
+  --error-background-02: #f97066;
+  --error-background-03: #d92d20;
+  --error-background-04: #912018;
+  --primary-foreground-01: #088ab2;
+  --primary-foreground-02: #155b75;
+  --secondary-foreground-01: #155b75;
+  --secondary-foreground-02: #000000;
+  --neutral-foreground-01: #f2f2f2;
+  --neutral-foreground-02: #c7c7c7;
+  --success-foreground-01: #17b26a;
+  --success-foreground-02: #067647;
+  --info-foreground-01: #1570ef;
+  --info-foreground-02: #1849a9;
+  --warning-foreground-01: #f79009;
+  --warning-foreground-02: #dc6803;
+  --error-foreground-01: #d92d20;
+  --error-foreground-02: #912018;
+  --primary-text-01: #ffffff;
+  --primary-text-02: #000000;
+  --secondary-text-01: #088ab2;
+  --secondary-text-02: #155b75;
+  --neutral-text-01: #f2f2f2;
+  --neutral-text-02: #c7c7c7;
+  --success-text-01: #17b26a;
+  --success-text-02: #067647;
+  --info-text-01: #1570ef;
+  --info-text-02: #1849a9;
+  --warning-text-01: #f79009;
+  --warning-text-02: #dc6803;
+  --error-text-01: #d92d20;
+  --error-text-02: #912018;
   --error-25: #fffbfa;
   --error-50: #fef3f2;
   --error-100: #fee4e2;
@@ -227,6 +290,18 @@
   --teal-800: #125d56;
   --teal-900: #134e48;
   --teal-950: #0a2926;
+  --cyan-25: #f5feff;
+  --cyan-50: #ecfdff;
+  --cyan-100: #cff9fe;
+  --cyan-200: #a5f0fc;
+  --cyan-300: #67e3f9;
+  --cyan-400: #22ccee;
+  --cyan-500: #06aed4;
+  --cyan-600: #088ab2;
+  --cyan-700: #0e7090;
+  --cyan-800: #155b75;
+  --cyan-900: #164c63;
+  --cyan-950: #0d2d3a;
   --blue-dark-25: #f5fbff;
   --blue-dark-50: #eff4ff;
   --blue-dark-100: #d1e0ff;
@@ -239,6 +314,18 @@
   --blue-dark-800: #0040c1;
   --blue-dark-900: #00359e;
   --blue-dark-950: #002266;
+  --blue-25: #f5faff;
+  --blue-50: #eff8ff;
+  --blue-100: #d1e9ff;
+  --blue-200: #b2ddff;
+  --blue-300: #84caff;
+  --blue-400: #53b1fd;
+  --blue-500: #2e90fa;
+  --blue-600: #1570ef;
+  --blue-700: #175cd3;
+  --blue-800: #1849a9;
+  --blue-900: #194185;
+  --blue-950: #102a56;
   --indigo-25: #f5f8ff;
   --indigo-50: #eef4ff;
   --indigo-100: #e0eaff;
@@ -350,8 +437,10 @@
 }
 
 [data-theme=dark] {
+  --base-white: #000000;
+  --base-black: #ffffff;
   --brand-25: #0d2d3a;
-  --brand-50: #155b75;
+  --brand-50: #164c63;
   --brand-100: #155b75;
   --brand-200: #0e7090;
   --brand-300: #088ab2;
@@ -362,30 +451,18 @@
   --brand-800: #cff9fe;
   --brand-900: #ecfdff;
   --brand-950: #f5feff;
-  --secondary-light-25: #000000;
-  --secondary-light-50: #050505;
-  --secondary-light-100: #1c1c1c;
-  --secondary-light-200: #393939;
-  --secondary-light-300: #565656;
-  --secondary-light-400: #727272;
-  --secondary-light-500: #8f8f8f;
-  --secondary-light-600: #ababab;
-  --secondary-light-700: #c7c7c7;
-  --secondary-light-800: #e4e4e4;
-  --secondary-light-900: #f2f2f2;
-  --secondary-light-950: #fbfbfb;
-  --info-25: #102a56;
-  --info-50: #194185;
-  --info-100: #1849a9;
-  --info-200: #175cd3;
-  --info-300: #1570ef;
-  --info-400: #2e90fa;
-  --info-500: #53b1fd;
-  --info-600: #84caff;
-  --info-700: #b2ddff;
-  --info-800: #d1e9ff;
-  --info-900: #eff8ff;
-  --info-950: #f5faff;
+  --secondary-light-25: #020202;
+  --secondary-light-50: #151515;
+  --secondary-light-100: #1b1b1b;
+  --secondary-light-200: #383838;
+  --secondary-light-300: #545454;
+  --secondary-light-400: #717171;
+  --secondary-light-500: #8d8d8d;
+  --secondary-light-600: #aaaaaa;
+  --secondary-light-700: #c6c6c6;
+  --secondary-light-800: #e3e3e3;
+  --secondary-light-900: #fafafa;
+  --secondary-light-950: #ffffff;
   --gray-light-25: #0c111d;
   --gray-light-50: #101828;
   --gray-light-100: #182230;
@@ -403,13 +480,86 @@
   --gray-primary-100: #77797a;
   --gray-primary-200: #c6c9cc;
   --gray-primary-300: #eef2f5;
-  --gray-primary-400: #f2f5f7;
-  --gray-primary-500: #94969c;
+  --gray-primary-400: #f0f3f6;
+  --gray-primary-500: #f2f5f7;
   --gray-primary-600: #f5f7f9;
   --gray-primary-700: #f7f9fa;
   --gray-primary-800: #f9fafb;
   --gray-primary-900: #fafbfc;
   --gray-primary-950: #fcfdfd;
+  --primary-border-01: #06aed4;
+  --primary-border-02: #67e3f9;
+  --primary-border-03: #a5f0fc;
+  --primary-border-03: #cff9fe;
+  --secondary-border-01: #ffffff;
+  --secondary-border-02: #e3e3e3;
+  --secondary-border-03: #c6c6c6;
+  --secondary-border-04: #aaaaaa;
+  --neutral-border-01: #fafafa;
+  --neutral-border-02: #717171;
+  --neutral-border-03: #383838;
+  --success-border-01: #47cd89;
+  --success-border-02: #abefc6;
+  --info-border-01: #84caff;
+  --info-border-02: #d1e9ff;
+  --warning-border-01: #fdb022;
+  --warning-border-02: #fec84b;
+  --error-border-01: #fda29b;
+  --error-border-02: #fee4e2;
+  --primary-background-01: #088ab2;
+  --primary-background-02: #a5f0fc;
+  --primary-background-03: #a5f0fc;
+  --primary-background-04: #cff9fe;
+  --secondary-background-01: #383838;
+  --secondary-background-02: #c6c6c6;
+  --secondary-background-03: #fafafa;
+  --neutral-background-01: #ffffff;
+  --neutral-background-02: #8d8d8d;
+  --neutral-background-03: #717171;
+  --success-background-01: #074d31;
+  --success-background-02: #079455;
+  --success-background-03: #47cd89;
+  --success-background-04: #abefc6;
+  --info-background-01: #194185;
+  --info-background-02: #2e90fa;
+  --info-background-03: #84caff;
+  --info-background-04: #d1e9ff;
+  --warning-background-01: #792e0d;
+  --warning-background-02: #b54708;
+  --warning-background-03: #f79009;
+  --warning-background-04: #fec84b;
+  --error-background-01: #7a271a;
+  --error-background-02: #f04438;
+  --error-background-03: #fda29b;
+  --error-background-04: #fee4e2;
+  --primary-foreground-01: #67e3f9;
+  --primary-foreground-02: #cff9fe;
+  --secondary-foreground-01: #020202;
+  --secondary-foreground-02: #ffffff;
+  --neutral-foreground-01: #151515;
+  --neutral-foreground-02: #545454;
+  --success-foreground-01: #47cd89;
+  --success-foreground-02: #abefc6;
+  --info-foreground-01: #84caff;
+  --info-foreground-02: #eff8ff;
+  --warning-foreground-01: #fdb022;
+  --warning-foreground-02: #fec84b;
+  --error-foreground-01: #fda29b;
+  --error-foreground-02: #fee4e2;
+  --primary-text-01: #020202;
+  --primary-text-02: #ffffff;
+  --secondary-text-01: #67e3f9;
+  --secondary-text-02: #cff9fe;
+  --neutral-text-01: #151515;
+  --neutral-text-02: #545454;
+  --success-text-01: #47cd89;
+  --success-text-02: #abefc6;
+  --info-text-01: #84caff;
+  --info-text-02: #eff8ff;
+  --warning-text-01: #fdb022;
+  --warning-text-02: #fec84b;
+  --error-text-01: #fda29b;
+  --error-text-02: #fee4e2;
   --error-25: #55160c;
   --error-50: #7a271a;
   --error-100: #912018;
@@ -566,6 +716,18 @@
   --teal-800: #ccfbef;
   --teal-900: #f0fdf9;
   --teal-950: #f6fefc;
+  --cyan-25: #0d2d3a;
+  --cyan-50: #164c63;
+  --cyan-100: #155b75;
+  --cyan-200: #0e7090;
+  --cyan-300: #088ab2;
+  --cyan-400: #06aed4;
+  --cyan-500: #22ccee;
+  --cyan-600: #67e3f9;
+  --cyan-700: #a5f0fc;
+  --cyan-800: #cff9fe;
+  --cyan-900: #ecfdff;
+  --cyan-950: #f5feff;
   --blue-dark-25: #002266;
   --blue-dark-50: #00359e;
   --blue-dark-100: #0040c1;
@@ -578,6 +740,18 @@
   --blue-dark-800: #d1e0ff;
   --blue-dark-900: #eff4ff;
   --blue-dark-950: #f5fbff;
+  --blue-25: #102a56;
+  --blue-50: #194185;
+  --blue-100: #1849a9;
+  --blue-200: #175cd3;
+  --blue-300: #1570ef;
+  --blue-400: #2e90fa;
+  --blue-500: #53b1fd;
+  --blue-600: #84caff;
+  --blue-700: #b2ddff;
+  --blue-800: #d1e9ff;
+  --blue-900: #eff8ff;
+  --blue-950: #f5faff;
   --indigo-25: #1f235b;
   --indigo-50: #2d3282;
   --indigo-100: #2d31a6;
@@ -746,6 +920,1122 @@
   --shadow-3xl: 3px 50px 70px 24px rgba(16, 24, 40, 0.14);
 }
 
-body {
-  background-color: var(--primary-100);
+.display-7xl-100 {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-100 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-100 {
+  font-size: 3.625rem;
+  font-weight: 100;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-100 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-100 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-100 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-100 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-100 {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-100 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-100 {
+  font-size: 0.875rem;
+  font-weight: 100;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-100 {
+  font-size: 0.75rem;
+  font-weight: 100;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-100 {
+  font-size: 0.625rem;
+  font-weight: 100;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-300 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-300 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-300 {
+  font-size: 3.625rem;
+  font-weight: 300;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-300 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-300 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-300 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-300 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-300 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-300 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-300 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-300 {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-300 {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-400 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-400 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-400 {
+  font-size: 3.625rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-400 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-400 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-400 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-400 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-400 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-400 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-400 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-400 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-400 {
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-600 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-600 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-600 {
+  font-size: 3.625rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-600 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-600 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-600 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-600 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-600 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-600 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-600 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-600 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-600 {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-700 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-700 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-700 {
+  font-size: 3.625rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-700 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-700 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-700 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-700 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-700 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-700 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-700 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-700 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-700 {
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-800 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-800 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-800 {
+  font-size: 3.625rem;
+  font-weight: 800;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-800 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-800 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-800 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-800 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-800 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-800 {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-800 {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-800 {
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-800 {
+  font-size: 0.625rem;
+  font-weight: 800;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-900 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-900 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-900 {
+  font-size: 3.625rem;
+  font-weight: 900;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-900 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-900 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-900 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-900 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-900 {
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-900 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-900 {
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-900 {
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-900 {
+  font-size: 0.625rem;
+  font-weight: 900;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-7xl-950 {
+  font-size: 6rem;
+  font-weight: 950;
+  line-height: 9rem;
+  font-style: normal;
+}
+
+.h1-6xl-950 {
+  font-size: 4.5rem;
+  font-weight: 950;
+  line-height: 7rem;
+  font-style: normal;
+}
+
+.h2-5xl-950 {
+  font-size: 3.625rem;
+  font-weight: 950;
+  line-height: 5.5rem;
+  font-style: normal;
+}
+
+.h3-4xl-950 {
+  font-size: 3rem;
+  font-weight: 950;
+  line-height: 4.5rem;
+  font-style: normal;
+}
+
+.h4-3xl-950 {
+  font-size: 2rem;
+  font-weight: 950;
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+.h5-2xl-950 {
+  font-size: 1.5rem;
+  font-weight: 950;
+  line-height: 2.5rem;
+  font-style: normal;
+}
+
+.h6-xl-950 {
+  font-size: 1.25rem;
+  font-weight: 950;
+  line-height: 2rem;
+  font-style: normal;
+}
+
+.body1-lg-950 {
+  font-size: 1.125rem;
+  font-weight: 950;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.body2-md-950 {
+  font-size: 1rem;
+  font-weight: 950;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body3-sm-950 {
+  font-size: 0.875rem;
+  font-weight: 950;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.caption1-xs-950 {
+  font-size: 0.75rem;
+  font-weight: 950;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.caption2-xxs-950 {
+  font-size: 0.625rem;
+  font-weight: 950;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.display-4xl-100 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-100 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-100 {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-100 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-100 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-100 {
+  font-size: 0.875rem;
+  font-weight: 100;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-100 {
+  font-size: 0.75rem;
+  font-weight: 100;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-100 {
+  font-size: 0.625rem;
+  font-weight: 100;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-300 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-300 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-300 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-300 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-300 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-300 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-300 {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-300 {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-400 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-400 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-400 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-400 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-400 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-400 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-400 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-400 {
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-600 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-600 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-600 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-600 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-600 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-600 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-600 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-600 {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-700 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-700 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-700 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-700 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-700 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-700 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-700 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-700 {
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-800 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-800 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-800 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-800 {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-800 {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-800 {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-800 {
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-800 {
+  font-size: 0.625rem;
+  font-weight: 800;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-900 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-900 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-900 {
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-900 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-900 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-900 {
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-900 {
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-900 {
+  font-size: 0.625rem;
+  font-weight: 900;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.display-4xl-950 {
+  font-size: 1.5rem;
+  font-weight: 950;
+  line-height: 2.25rem;
+  font-style: normal;
+}
+
+.h1-3xl-950 {
+  font-size: 1.25rem;
+  font-weight: 950;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+
+.h2-2xl-950 {
+  font-size: 1.125rem;
+  font-weight: 950;
+  line-height: 1.75rem;
+  font-style: normal;
+}
+
+.h3-xl-950 {
+  font-size: 1rem;
+  font-weight: 950;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body1-m-lg-950 {
+  font-size: 1rem;
+  font-weight: 950;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.body2-m-md-950 {
+  font-size: 0.875rem;
+  font-weight: 950;
+  line-height: 1.25rem;
+  font-style: normal;
+}
+
+.body3-m-sm-950 {
+  font-size: 0.75rem;
+  font-weight: 950;
+  line-height: 1.125rem;
+  font-style: normal;
+}
+
+.caption-xs-950 {
+  font-size: 0.625rem;
+  font-weight: 950;
+  line-height: 1rem;
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

@@ -3,4 +3,4 @@
 @use './spacing' as *;
 @use './shadow' as *;
 @use './typography' as *;
-@use '../../src/components/Button/button.module' as *;
+@use "../components/Button/_button.module.scss" as *;
