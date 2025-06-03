@@ -3,19 +3,21 @@ import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
         additionalData: "",
-        includePaths: ["src"], 
+        includePaths: ["src"],
       },
     },
   },
   plugins: [
     react(),
     dts(),
+    cssInjectedByJsPlugin(),
     viteStaticCopy({
       targets: [
         {

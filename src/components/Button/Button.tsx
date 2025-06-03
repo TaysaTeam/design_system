@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Icon } from "../Icon";
-import styles from "../../styles/_button.module.scss";
+import styles from "./_button.module.scss";
 import { ButtonProps } from "./types";
 
 export const Button = ({
