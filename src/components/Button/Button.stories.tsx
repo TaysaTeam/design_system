@@ -11,7 +11,7 @@ const meta: Meta<typeof Button> = {
       control: { type: "radio" },
     },
     type: {
-      options: ["contained", "outlined", "text"],
+      options: ["contained", "outlined", "text", "tonal"],
       control: { type: "radio" },
     },
     size: {
@@ -59,6 +59,14 @@ export const PrimaryText: Story = {
   },
 };
 
+export const PrimaryTonal: Story = {
+  args: {
+    children: "Primary Tonal",
+    variant: "primary",
+    style: "tonal",
+  },
+};
+
 // Secondary Buttons
 export const SecondaryContained: Story = {
   args: {
@@ -81,6 +89,14 @@ export const SecondaryText: Story = {
     children: "Secondary Text",
     variant: "secondary",
     style: "text",
+  },
+};
+
+export const SecondaryTonal: Story = {
+  args: {
+    children: "Secondary Tonal",
+    variant: "secondary",
+    style: "tonal",
   },
 };
 
@@ -108,6 +124,15 @@ export const DisabledText: Story = {
     children: "Disabled Text",
     variant: "primary",
     style: "text",
+    disabled: true,
+  },
+};
+
+export const DisabledTonal: Story = {
+  args: {
+    children: "Disabled Tonal",
+    variant: "primary",
+    style: "tonal",
     disabled: true,
   },
 };
