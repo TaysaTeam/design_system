@@ -2038,4 +2038,107 @@
   font-weight: 950;
   line-height: 1rem;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./YekanBakh-thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./YekanBakh-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./YekanBakh-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./YekanBakh-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./YekanBakh-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./YekanBakh-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./YekanBakh-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 950;
+  src: url("./YekanBakh-ExtraBlack.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 100;
+  src: "./YekanBakhFaNum-thin.woff2" format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 300;
+  src: "./YekanBakhFaNum-Light.woff2" format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 400;
+  src: "./YekanBakhFaNum-Regular.woff2" format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  src: "./YekanBakhFaNum-SemiBold.woff2" format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 700;
+  src: "./YekanBakhFaNum-Bold.woff2" format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./YekanBakhFaNum-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 950;
+  src: url("./YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Yekan Bakh", "Yekan Bakh FaNum", sans-serif !important;
 }/*# sourceMappingURL=main.css.map */
