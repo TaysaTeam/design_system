@@ -3,9 +3,10 @@ import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 export default defineConfig({
+  assetsInclude: ["**/*.woff", "**/*.woff2", "**/*.ttf"],
   css: {
     preprocessorOptions: {
       scss: {

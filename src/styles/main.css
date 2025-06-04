@@ -96,7 +96,7 @@
   --error-background-04: #912018;
   --primary-foreground-01: #088ab2;
   --primary-foreground-02: #155b75;
-  --secondary-foreground-01: #155b75;
+  --secondary-foreground-01: #ffffff;
   --secondary-foreground-02: #000000;
   --neutral-foreground-01: #f2f2f2;
   --neutral-foreground-02: #c7c7c7;
@@ -114,6 +114,8 @@
   --secondary-text-02: #155b75;
   --neutral-text-01: #f2f2f2;
   --neutral-text-02: #c7c7c7;
+  --neutral-text-03: #8f8f8f;
+  --neutral-text-04: #565656;
   --success-text-01: #17b26a;
   --success-text-02: #067647;
   --info-text-01: #1570ef;
@@ -552,6 +554,8 @@
   --secondary-text-02: #cff9fe;
   --neutral-text-01: #151515;
   --neutral-text-02: #545454;
+  --neutral-text-03: #717171;
+  --neutral-text-03: #aaaaaa;
   --success-text-01: #47cd89;
   --success-text-02: #abefc6;
   --info-text-01: #84caff;
