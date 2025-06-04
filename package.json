@@ -16,10 +16,7 @@
   "style": "./dist/styles/main.scss",
   "scripts": {
     "dev": "vite",
-    "build:css": "sass src/styles/main.scss dist/styles/main.css",
-    "copy:styles": "copyfiles -u 1 src/styles/**/* dist/styles",
-    "copy:fonts": "copyfiles -u 1 src/assets/fonts/**/* dist/assets/fonts",
-    "build": "npm run build:css && npm run copy:styles && npm run copy:fonts && vite build",
+    "build": "vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

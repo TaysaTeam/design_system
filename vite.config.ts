@@ -21,10 +21,8 @@ export default defineConfig({
     cssInjectedByJsPlugin(),
     viteStaticCopy({
       targets: [
-        {
-          src: "src/styles/**/*",
-          dest: "styles",
-        },
+        { src: "src/styles/**/*", dest: "styles" },
+        { src: "src/assets/fonts/*", dest: "assets/fonts" },
       ],
     }),
   ],
