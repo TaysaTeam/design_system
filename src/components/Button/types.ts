@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes, PropsWithChildren } from "react";
 import { IconName } from "../Icon";
 
 type Variant = "primary" | "secondary";
-type Style = "contained" | "outlined" | "text";
+type Style = "contained" | "outlined" | "text" | "tonal";
 type Size = "large" | "medium" | "small";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
