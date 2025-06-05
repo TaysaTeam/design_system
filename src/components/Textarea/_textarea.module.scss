@@ -31,8 +31,8 @@
 
   .cornerLine {
     position: absolute;
-    bottom: calc(var(--space-1) - var(--space-2));
-    left: 1px;
+    bottom: calc(var(--space-2) - var(--space-4));
+    left: -0.5px;
     z-index: 2;
     transition: color 0.3s ease;
 
