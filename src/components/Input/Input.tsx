@@ -22,13 +22,13 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   ) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isFloating, setIsFloating] = useState(false);
-    const inputRef = useRef<HTMLInputElement>(null);
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
-      setIsFloating(
-        !!(isFocused || value || (inputRef.current && inputRef.current.value))
-      );
-    }, [isFocused, value]);
+      const hasValue =
+        !!value || !!(inputRef.current && inputRef.current.value);
+      setIsFloating(hasValue || isFocused);
+    }, [value, isFocused]);
 
     return (
       <div className={styles.inputContainer}>
@@ -50,6 +50,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={(node) => {
               if (typeof ref === "function") ref(node);
               else if (ref) ref.current = node;
+              inputRef.current = node;
             }}
             className={clsx(
               styles.input,
@@ -71,6 +72,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               setIsFocused(false);
               rest.onBlur?.(e);
             }}
+            onChange={(e) => {
+              setIsFloating(!!e.target.value || isFocused);
+              rest.onChange?.(e);
+            }}
             value={value}
             {...rest}
             placeholder={label ? " " : rest.placeholder}
@@ -82,9 +87,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
                 styles.label,
                 error && styles.errorLabel,
                 isFloating && styles.floating,
+                inputSize && styles[inputSize],
                 leftIconName && styles.hasLeftIconLabel,
                 (rightIconName || error) && styles.hasRightIconLabel,
-                disabled && styles.disabledLabel
+                disabled && styles.disabledLabel,
+                isFocused && styles.focused
               )}
               onClick={() => inputRef.current?.focus()}
             >

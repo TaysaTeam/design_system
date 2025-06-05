@@ -23,16 +23,12 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   ) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isFloating, setIsFloating] = useState(false);
-    const textareaRef = useRef<HTMLTextAreaElement>(null);
+    const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
     useEffect(() => {
-      setIsFloating(
-        !!(
-          isFocused ||
-          value ||
-          (textareaRef.current && textareaRef.current.value)
-        )
-      );
+      const hasValue =
+        !!value || !!(textareaRef.current && textareaRef.current.value);
+      setIsFloating(hasValue || isFocused);
     }, [isFocused, value]);
 
     return (
@@ -55,6 +51,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
             ref={(node) => {
               if (typeof ref === "function") ref(node);
               else if (ref) ref.current = node;
+              textareaRef.current = node;
             }}
             className={clsx(
               styles.textarea,
@@ -75,6 +72,10 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
               setIsFocused(false);
               rest.onBlur?.(e);
             }}
+            onChange={(e) => {
+              setIsFloating(!!e.target.value || isFocused);
+              rest.onChange?.(e);
+            }}
             value={value}
             rows={rows}
             {...rest}
@@ -90,7 +91,8 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
                 isFloating && styles.floating,
                 leftIconName && styles.hasLeftIconLabel,
                 (rightIconName || error) && styles.hasRightIconLabel,
-                disabled && styles.disabledLabel
+                disabled && styles.disabledLabel,
+                isFocused && styles.focused
               )}
               onClick={() => textareaRef.current?.focus()}
             >
