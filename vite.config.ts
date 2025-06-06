@@ -43,4 +43,8 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    cors: true,
+    origin: "http://story.taysa.ir:6006",
+  },
 });
