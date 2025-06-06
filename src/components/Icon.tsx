@@ -7,6 +7,7 @@ import { CornerLine } from "./Icons/CornerLine";
 import { IconButton } from "./Icons/IconButton";
 import { PenTool } from "./Icons/PenTool";
 import { ArrowUp } from "./Icons/ArrowUp";
+import { ArrowDown } from "./Icons/ArrowDown";
 
 const icons = {
   add: Add,
@@ -16,7 +17,8 @@ const icons = {
   cornerline: CornerLine,
   iconButton: IconButton,
   penTool: PenTool,
-  arrowUp: ArrowUp
+  arrowUp: ArrowUp,
+  arrowDown:ArrowDown
 };
 
 export type IconName = keyof typeof icons;
