@@ -8,6 +8,8 @@ import { IconButton } from "./Icons/IconButton";
 import { PenTool } from "./Icons/PenTool";
 import { ArrowUp } from "./Icons/ArrowUp";
 import { ArrowDown } from "./Icons/ArrowDown";
+import { LongCurvedLine } from "./Icons/LongCurvedLine";
+import { ShortCurvedLine } from "./Icons/ShortCurvedLine";
 
 const icons = {
   add: Add,
@@ -18,7 +20,9 @@ const icons = {
   iconButton: IconButton,
   penTool: PenTool,
   arrowUp: ArrowUp,
-  arrowDown:ArrowDown
+  arrowDown: ArrowDown,
+  longCurvedLine: LongCurvedLine,
+  shortCurvedLine: ShortCurvedLine,
 };
 
 export type IconName = keyof typeof icons;
