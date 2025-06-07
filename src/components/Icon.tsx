@@ -10,6 +10,17 @@ import { ArrowUp } from "./Icons/ArrowUp";
 import { ArrowDown } from "./Icons/ArrowDown";
 import { LongCurvedLine } from "./Icons/LongCurvedLine";
 import { ShortCurvedLine } from "./Icons/ShortCurvedLine";
+import { User_2 } from "./Icons/User_2";
+import { Api } from "./Icons/Api";
+import { Category } from "./Icons/Category";
+import { Calendar_2 } from "./Icons/Calendar_2";
+import { People } from "./Icons/People";
+import { User_Tick } from "./Icons/User_Tick";
+import { Shield_Tick } from "./Icons/Shield_Tick";
+import { Document_Text } from "./Icons/Document_Text";
+import { Wallet } from "./Icons/Wallet";
+import { Sms } from "./Icons/Sms";
+import { Sms_Edit } from "./Icons/Sms_Edit";
 
 const icons = {
   add: Add,
@@ -21,6 +32,17 @@ const icons = {
   penTool: PenTool,
   arrowUp: ArrowUp,
   arrowDown: ArrowDown,
+  user_2: User_2,
+  api: Api,
+  category: Category,
+  calendar_2: Calendar_2,
+  wallet: Wallet,
+  people: People,
+  user_tick: User_Tick,
+  shield_tick: Shield_Tick,
+  document_text: Document_Text,
+  sms: Sms,
+  sms_edit: Sms_Edit,
   longCurvedLine: LongCurvedLine,
   shortCurvedLine: ShortCurvedLine,
 };
