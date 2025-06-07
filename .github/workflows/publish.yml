@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
+# جلوگیری از اجرای همزمان چند workflow روی شاخه main
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -164,4 +165,3 @@ jobs:
             docker-compose down
             docker-compose up -d --force-recreate
             docker image prune -a -f
-```
