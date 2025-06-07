@@ -68,7 +68,7 @@
     color: var(--secondary-text-02);
     @extend .body3-sm-600;
     margin-right: calc(var(--space-4) + var(--space-3));
-    margin-left: var(--space-10);
+    margin-left: calc(var(--space-9));
     height: calc(var(--space-20) + var(--space-0_5));
     margin-top: var(--space-3);
     direction: rtl;
