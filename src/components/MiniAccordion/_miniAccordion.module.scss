@@ -1,0 +1,76 @@
+@use "/src/styles/main.scss" as *;
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid var(--blue-50);
+  border-radius: var(--radius-4xl);
+  padding: var(--space-4);
+  width: calc(var(--space-140) + var(--space-3));
+  height: calc(var(--space-32) - var(--space-1));
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  transition: all 0.4s ease;
+  position: relative;
+
+  .shortCurveIcon {
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    transform: rotate(-5.093deg);
+  }
+
+  .LongCurveIcon {
+    position: absolute;
+    top: calc(var(--space-10) + var(--space-1_5));
+    left: 1px;
+    bottom: calc(var(--space-12) + var(--space-0_5));
+
+    transform: rotate(-2.847deg);
+  }
+
+  &:hover {
+    background: var(--cyan-25);
+    box-shadow: var(--shadow-md);
+    border: var(--space-0_5) solid var(--purple-200);
+    transition: all 0.4s ease;
+  }
+
+  &.active {
+    box-shadow: var(--shadow-md);
+    height: calc(var(--space-32) + var(--space-1_5));
+    transition: all 0.4s ease;
+  }
+
+  .accordionContent {
+    display: flex;
+    justify-content: space-between;
+    height: var(--space-10);
+    padding: var(--space-1) var(--space-8);
+    align-items: center;
+    flex-shrink: 0;
+    margin: auto var(--space-5);
+    transition: all 0.4s ease;
+
+    .title {
+      color: var(--primary-text-02);
+    }
+  }
+
+  .accordionContentWrapper {
+    overflow: hidden;
+    transition: all 0.7s ease;
+  }
+
+  .desc {
+    color: var(--secondary-text-02);
+    @extend .body3-sm-600;
+    margin-right: calc(var(--space-4) + var(--space-3));
+    margin-left: calc(var(--space-9));
+    height: calc(var(--space-20) + var(--space-0_5));
+    margin-top: var(--space-3);
+    direction: rtl;
+  }
+}
