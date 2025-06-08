@@ -2,33 +2,33 @@
 $base-white: #ffffff;
 $base-black: #000000;
 
-// Brand
-$brand-25: #f5feff;
-$brand-50: #ecfdff;
-$brand-100: #cff9fe;
-$brand-200: #a5f0fc;
-$brand-300: #67e3f9;
-$brand-400: #22ccee;
-$brand-500: #06aed4;
-$brand-600: #088ab2;
-$brand-700: #0e7090;
-$brand-800: #155b75;
-$brand-900: #164c63;
-$brand-950: #0d2d3a;
+// Secondary
+$secondary-25: #f5feff;
+$secondary-50: #ecfdff;
+$secondary-100: #cff9fe;
+$secondary-200: #a5f0fc;
+$secondary-300: #67e3f9;
+$secondary-400: #22ccee;
+$secondary-500: #06aed4;
+$secondary-600: #088ab2;
+$secondary-700: #0e7090;
+$secondary-800: #155b75;
+$secondary-900: #164c63;
+$secondary-950: #0d2d3a;
 
-// Secondary (light mode)
-$secondary-light-25: #fbfbfb;
-$secondary-light-50: #f2f2f2;
-$secondary-light-100: #e4e4e4;
-$secondary-light-200: #c7c7c7;
-$secondary-light-300: #ababab;
-$secondary-light-400: #8f8f8f;
-$secondary-light-500: #727272;
-$secondary-light-600: #565656;
-$secondary-light-700: #393939;
-$secondary-light-800: #1c1c1c;
-$secondary-light-900: #050505;
-$secondary-light-950: #000000;
+// Primary (light mode)
+$primary-light-25: #fbfbfb;
+$primary-light-50: #f2f2f2;
+$primary-light-100: #e4e4e4;
+$primary-light-200: #c7c7c7;
+$primary-light-300: #ababab;
+$primary-light-400: #8f8f8f;
+$primary-light-500: #727272;
+$primary-light-600: #565656;
+$primary-light-700: #393939;
+$primary-light-800: #1c1c1c;
+$primary-light-900: #050505;
+$primary-light-950: #000000;
 
 // Need to change: This part is in the Primary part
 // Secondary (dark mode)
@@ -89,14 +89,14 @@ $gray-primary-900: #4f5051;
 $gray-primary-950: #272828;
 
 // Border colors
-$primary-border-01: #22ccee;
-$primary-border-02: #06aed4;
-$primary-border-03: #088ab2;
-$primary-border-04: #155b75;
-$secondary-border-01: #050505;
-$secondary-border-02: #393939;
-$secondary-border-03: #565656;
-$secondary-border-04: #8f8f8f;
+$secondary-border-01: #22ccee;
+$secondary-border-02: #06aed4;
+$secondary-border-03: #088ab2;
+$secondary-border-04: #155b75;
+$primary-border-01: #050505;
+$primary-border-02: #393939;
+$primary-border-03: #565656;
+$primary-border-04: #8f8f8f;
 $neutral-border-01: #1c1c1c;
 $neutral-border-02: #c7c7c7;
 $neutral-border-03: #565656;
@@ -110,13 +110,14 @@ $error-border-01: #d92d20;
 $error-border-02: #912018;
 
 // Background colors
-$primary-background-01: #ecfdff;
-$primary-background-02: #06aed4;
-$primary-background-03: #088ab2;
-$primary-background-04: #0e6f90;
-$secondary-background-01: #c7c7c7;
-$secondary-background-02: #565656;
-$secondary-background-03: #050505;
+$primary-background-01: #f2f2f2;
+$primary-background-02: #c7c7c7;
+$primary-background-03: #565656;
+$primary-background-04: #050505;
+$secondary-background-01: #f5feff;
+$secondary-background-02: #06aed4;
+$secondary-background-03: #088ab2;
+$secondary-background-04: #0e6f90;
 $neutral-background-01: #000000;
 $neutral-background-02: #393939;
 $neutral-background-03: #8f8f8f;
@@ -138,12 +139,14 @@ $error-background-03: #d92d20;
 $error-background-04: #912018;
 
 // Foreground colors
-$primary-foreground-01: #088ab2;
-$primary-foreground-02: #155b75;
-$secondary-foreground-01: #ffffff;
-$secondary-foreground-02: #000000;
+$primary-foreground-01: #ffffff;
+$primary-foreground-02: #000000;
+$secondary-foreground-01: #088ab2;
+$secondary-foreground-02: #155b75;
 $neutral-foreground-01: #f2f2f2;
 $neutral-foreground-02: #c7c7c7;
+$neutral-foreground-03: #8f8f8f;
+$neutral-foreground-04: #565656;
 $success-foreground-01: #17b26a;
 $success-foreground-02: #067647;
 $info-foreground-01: #1570ef;
@@ -376,7 +379,7 @@ $cyan-300: #67e3f9;
 $cyan-400: #22ccee;
 $cyan-500: #06aed4;
 $cyan-600: #088ab2;
-$cyan-700: #0e7090;
+$cyan-300: #0e7090;
 $cyan-800: #155b75;
 $cyan-900: #164c63;
 $cyan-950: #0d2d3a;
@@ -540,33 +543,33 @@ $yellow-950: #542c0d;
   --base-white: #{$base-white};
   --base-black: #{$base-black};
 
-  // Brand
-  --brand-25: #{$brand-25};
-  --brand-50: #{$brand-50};
-  --brand-100: #{$brand-100};
-  --brand-200: #{$brand-200};
-  --brand-300: #{$brand-300};
-  --brand-400: #{$brand-400};
-  --brand-500: #{$brand-500};
-  --brand-600: #{$brand-600};
-  --brand-700: #{$brand-700};
-  --brand-800: #{$brand-800};
-  --brand-900: #{$brand-900};
-  --brand-950: #{$brand-950};
+  // Secondary
+  --secondary-25: #{$secondary-25};
+  --secondary-50: #{$secondary-50};
+  --secondary-100: #{$secondary-100};
+  --secondary-200: #{$secondary-200};
+  --secondary-300: #{$secondary-300};
+  --secondary-400: #{$secondary-400};
+  --secondary-500: #{$secondary-500};
+  --secondary-600: #{$secondary-600};
+  --secondary-700: #{$secondary-700};
+  --secondary-800: #{$secondary-800};
+  --secondary-900: #{$secondary-900};
+  --secondary-950: #{$secondary-950};
 
-  // Secondary (light mode)
-  --secondary-light-25: #{$secondary-light-25};
-  --secondary-light-50: #{$secondary-light-50};
-  --secondary-light-100: #{$secondary-light-100};
-  --secondary-light-200: #{$secondary-light-200};
-  --secondary-light-300: #{$secondary-light-300};
-  --secondary-light-400: #{$secondary-light-400};
-  --secondary-light-500: #{$secondary-light-500};
-  --secondary-light-600: #{$secondary-light-600};
-  --secondary-light-700: #{$secondary-light-700};
-  --secondary-light-800: #{$secondary-light-800};
-  --secondary-light-900: #{$secondary-light-900};
-  --secondary-light-950: #{$secondary-light-950};
+  // Primary (light mode)
+  --primary-light-25: #{$primary-light-25};
+  --primary-light-50: #{$primary-light-50};
+  --primary-light-100: #{$primary-light-100};
+  --primary-light-200: #{$primary-light-200};
+  --primary-light-300: #{$primary-light-300};
+  --primary-light-400: #{$primary-light-400};
+  --primary-light-500: #{$primary-light-500};
+  --primary-light-600: #{$primary-light-600};
+  --primary-light-700: #{$primary-light-700};
+  --primary-light-800: #{$primary-light-800};
+  --primary-light-900: #{$primary-light-900};
+  --primary-light-950: #{$primary-light-950};
 
   // Gray (light mode)
   --gray-light-25: #{$gray-light-25};
@@ -597,14 +600,14 @@ $yellow-950: #542c0d;
   --gray-primary-950: #{$gray-primary-950};
 
   // Border colors
-  --primary-border-01: #{$primary-border-01};
-  --primary-border-02: #{$primary-border-02};
-  --primary-border-03: #{$primary-border-03};
-  --primary-border-04: #{$primary-border-04};
   --secondary-border-01: #{$secondary-border-01};
   --secondary-border-02: #{$secondary-border-02};
   --secondary-border-03: #{$secondary-border-03};
   --secondary-border-04: #{$secondary-border-04};
+  --primary-border-01: #{$primary-border-01};
+  --primary-border-02: #{$primary-border-02};
+  --primary-border-03: #{$primary-border-03};
+  --primary-border-04: #{$primary-border-04};
   --neutral-border-01: #{$neutral-border-01};
   --neutral-border-02: #{$neutral-border-02};
   --neutral-border-03: #{$neutral-border-03};
@@ -625,6 +628,7 @@ $yellow-950: #542c0d;
   --secondary-background-01: #{$secondary-background-01};
   --secondary-background-02: #{$secondary-background-02};
   --secondary-background-03: #{$secondary-background-03};
+  --secondary-background-04: #{$secondary-background-04};
   --neutral-background-01: #{$neutral-background-01};
   --neutral-background-02: #{$neutral-background-02};
   --neutral-background-03: #{$neutral-background-03};
@@ -884,7 +888,7 @@ $yellow-950: #542c0d;
   --cyan-400: #{$cyan-400};
   --cyan-500: #{$cyan-500};
   --cyan-600: #{$cyan-600};
-  --cyan-700: #{$cyan-700};
+  --cyan-300: #{$cyan-300};
   --cyan-800: #{$cyan-800};
   --cyan-900: #{$cyan-900};
   --cyan-950: #{$cyan-950};
@@ -1049,33 +1053,33 @@ $yellow-950: #542c0d;
   --base-white: #{$base-black};
   --base-black: #{$base-white};
 
-  // Brand Dark
-  --brand-25: #{$brand-950};
-  --brand-50: #{$brand-900};
-  --brand-100: #{$brand-800};
-  --brand-200: #{$brand-700};
-  --brand-300: #{$brand-600};
-  --brand-400: #{$brand-500};
-  --brand-500: #{$brand-400};
-  --brand-600: #{$brand-300};
-  --brand-700: #{$brand-200};
-  --brand-800: #{$brand-100};
-  --brand-900: #{$brand-50};
-  --brand-950: #{$brand-25};
+  // Secondary Dark
+  --secondary-25: #{$secondary-950};
+  --secondary-50: #{$secondary-900};
+  --secondary-100: #{$secondary-800};
+  --secondary-200: #{$secondary-700};
+  --secondary-300: #{$secondary-600};
+  --secondary-400: #{$secondary-500};
+  --secondary-500: #{$secondary-400};
+  --secondary-600: #{$secondary-300};
+  --secondary-700: #{$secondary-200};
+  --secondary-800: #{$secondary-100};
+  --secondary-900: #{$secondary-50};
+  --secondary-950: #{$secondary-25};
 
-  // Secondary (light mode) Dark
-  --secondary-light-25: #{$secondary-dark-950};
-  --secondary-light-50: #{$secondary-dark-900};
-  --secondary-light-100: #{$secondary-dark-800};
-  --secondary-light-200: #{$secondary-dark-700};
-  --secondary-light-300: #{$secondary-dark-600};
-  --secondary-light-400: #{$secondary-dark-500};
-  --secondary-light-500: #{$secondary-dark-400};
-  --secondary-light-600: #{$secondary-dark-300};
-  --secondary-light-700: #{$secondary-dark-200};
-  --secondary-light-800: #{$secondary-dark-100};
-  --secondary-light-900: #{$secondary-dark-50};
-  --secondary-light-950: #{$secondary-dark-25};
+  // Primary (light mode) Dark
+  --primary-light-25: #{$primary-dark-950};
+  --primary-light-50: #{$primary-dark-900};
+  --primary-light-100: #{$primary-dark-800};
+  --primary-light-200: #{$primary-dark-700};
+  --primary-light-300: #{$primary-dark-600};
+  --primary-light-400: #{$primary-dark-500};
+  --primary-light-500: #{$primary-dark-400};
+  --primary-light-600: #{$primary-dark-300};
+  --primary-light-700: #{$primary-dark-200};
+  --primary-light-800: #{$primary-dark-100};
+  --primary-light-900: #{$primary-dark-50};
+  --primary-light-950: #{$primary-dark-25};
 
   // Gray (light mode) Dark
   --gray-light-25: #{$gray-light-950};
@@ -1106,17 +1110,17 @@ $yellow-950: #542c0d;
   --gray-primary-950: #{$gray-primary-25};
 
   // Border colors Dark
-  --primary-border-01: #{$cyan-500};
-  --primary-border-02: #{$cyan-300};
-  --primary-border-03: #{$cyan-200};
-  --primary-border-03: #{$cyan-100};
-  --secondary-border-01: #{$secondary-dark-25};
-  --secondary-border-02: #{$secondary-dark-100};
-  --secondary-border-03: #{$secondary-dark-200};
-  --secondary-border-04: #{$secondary-dark-300};
-  --neutral-border-01: #{$gray-true-50};
-  --neutral-border-02: #{$secondary-dark-500};
-  --neutral-border-03: #{$secondary-dark-700};
+  --secondary-border-01: #{$cyan-500};
+  --secondary-border-02: #{$cyan-300};
+  --secondary-border-03: #{$cyan-200};
+  --secondary-border-03: #{$cyan-100};
+  --primary-border-01: #{$secondary-dark-25};
+  --primary-border-02: #{$secondary-dark-100};
+  --primary-border-03: #{$secondary-dark-200};
+  --primary-border-04: #{$secondary-dark-300};
+  --neutral-border-01: #{$secondary-dark-50};
+  --neutral-border-02: #{$secondary-dark-700};
+  --neutral-border-03: #{$secondary-dark-500};
   --success-border-01: #{$success-400};
   --success-border-02: #{$success-200};
   --info-border-01: #{$blue-300};
@@ -1127,15 +1131,16 @@ $yellow-950: #542c0d;
   --error-border-02: #{$error-100};
 
   // Background colors Dark
-  --primary-background-01: #{$cyan-600};
-  --primary-background-02: #{$cyan-200};
-  --primary-background-03: #{$cyan-200};
-  --primary-background-04: #{$cyan-100};
-  --secondary-background-01: #{$secondary-dark-700};
-  --secondary-background-02: #{$secondary-dark-200};
-  --secondary-background-03: #{$secondary-dark-50};
-  --neutral-background-01: #{$secondary-dark-25};
-  --neutral-background-02: #{$secondary-dark-400};
+  --secondary-background-01: #{$cyan-600};
+  --secondary-background-02: #{$cyan-300};
+  --secondary-background-03: #{$cyan-200};
+  --secondary-background-04: #{$cyan-100};
+  --primary-background-01: #{$secondary-dark-700};
+  --primary-background-02: #{$secondary-dark-600};
+  --primary-background-03: #{$secondary-dark-300};
+  --primary-background-04: #{$secondary-dark-25};
+  --neutral-background-01: #{$secondary-dark-50};
+  --neutral-background-02: #{$secondary-dark-200};
   --neutral-background-03: #{$secondary-dark-500};
   --success-background-01: #{$success-900};
   --success-background-02: #{$success-600};
@@ -1156,11 +1161,13 @@ $yellow-950: #542c0d;
 
   // Foreground colors Dark
   --primary-foreground-01: #{$cyan-300};
-  --primary-foreground-02: #{$cyan-100};
-  --secondary-foreground-01: #{$secondary-dark-950};
-  --secondary-foreground-02: #{$secondary-dark-25};
+  --primary-foreground-02: #{$primary-foreground-01};
+  --secondary-foreground-01: #{$cyan-300};
+  --secondary-foreground-02: #{$secondary-background-04};
   --neutral-foreground-01: #{$secondary-dark-900};
-  --neutral-foreground-02: #{$secondary-dark-600};
+  --neutral-foreground-02: #{$secondary-dark-700};
+  --neutral-foreground-03: #{$secondary-dark-500};
+  --neutral-foreground-04: #{$secondary-dark-300};
   --success-foreground-01: #{$success-400};
   --success-foreground-02: #{$success-200};
   --info-foreground-01: #{$blue-300};
@@ -1171,14 +1178,14 @@ $yellow-950: #542c0d;
   --error-foreground-02: #{$error-100};
 
   // Text colors Dark
-  --primary-text-01: #{$secondary-dark-950};
-  --primary-text-02: #{$secondary-dark-25};
+  --primary-text-01: #{$primary-text-02};
+  --primary-text-02: #{$primary-text-01};
   --secondary-text-01: #{$cyan-300};
   --secondary-text-02: #{$cyan-100};
   --neutral-text-01: #{$secondary-dark-900};
-  --neutral-text-02: #{$secondary-dark-600};
+  --neutral-text-02: #{$secondary-dark-700};
   --neutral-text-03: #{$secondary-dark-500};
-  --neutral-text-03: #{$secondary-dark-300};
+  --neutral-text-04: #{$secondary-dark-300};
   --success-text-01: #{$success-400};
   --success-text-02: #{$success-200};
   --info-text-01: #{$blue-300};
