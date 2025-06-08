@@ -20,11 +20,11 @@ export const ShortCurvedLine: React.FC<ShortCurvedLineProps> = ({
       fill={color}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.1866 102.898C13.1866 102.898 9.61535 -53.628 182.447 -0.952711C-12.6306 -83.6008 -21.484 105.379 -21.484 105.379L13.1866 102.898Z"
         fill="url(#paint0_linear_258_10793)"
-        fill-opacity="0.5"
+        fillOpacity="0.5"
       />
       <defs>
         <linearGradient
@@ -35,8 +35,8 @@ export const ShortCurvedLine: React.FC<ShortCurvedLineProps> = ({
           y2="97.8483"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EFECFF" />
-          <stop offset="1" stop-color="#E6F4FF" />
+          <stop stopColor="#EFECFF" />
+          <stop offset="1" stopColor="#E6F4FF" />
         </linearGradient>
       </defs>
     </svg>

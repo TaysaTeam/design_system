@@ -22,14 +22,14 @@ export const CornerLine: React.FC<CornerLineProps> = ({
       <path
         d="M6.33789 16.9975L1.00543 11.665"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <path
         d="M11.6641 16.9973L0.999133 6.3324"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
-      <path d="M17 16.9974L1.00261 1" stroke={color} stroke-linecap="round" />
+      <path d="M17 16.9974L1.00261 1" stroke={color} strokeLinecap="round" />
     </svg>
   );
 };

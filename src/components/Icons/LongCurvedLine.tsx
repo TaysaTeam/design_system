@@ -20,11 +20,11 @@ export const LongCurvedLine: React.FC<LongCurvedLineProps> = ({
       fill={color}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M519.517 135.191C-101.748 142.486 -49.7575 -83.8243 -49.7575 -83.8243C-49.7575 -83.8243 -89.0553 20.8277 78.5421 92.1062C162.523 127.823 298.454 155.16 517.309 156.751L519.517 135.191Z"
         fill="url(#paint0_linear_258_10792)"
-        fill-opacity="0.5"
+        fillOpacity="0.5"
       />
       <defs>
         <linearGradient
@@ -35,8 +35,8 @@ export const LongCurvedLine: React.FC<LongCurvedLineProps> = ({
           y2="136.746"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EFECFF" />
-          <stop offset="1" stop-color="#E6F4FF" />
+          <stop stopColor="#EFECFF" />
+          <stop offset="1" stopColor="#E6F4FF" />
         </linearGradient>
       </defs>
     </svg>
