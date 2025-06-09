@@ -46,6 +46,7 @@ jobs:
           git config user.email "taysa.bot@example.com"
           git add package.json
           git commit -m "Bump version to $NEW_VERSION"
+          git pull --rebase origin main
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
