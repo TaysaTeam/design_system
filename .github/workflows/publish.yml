@@ -44,7 +44,7 @@ jobs:
           echo "New version: $NEW_VERSION"
           git config user.name "Taysa Bot"
           git config user.email "taysa.bot@example.com"
-          git add package.json
+          git add .
           git commit -m "Bump version to $NEW_VERSION"
           git pull --rebase origin main
           git push
