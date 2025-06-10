@@ -21,6 +21,10 @@ import { Document_Text } from "./Icons/Document_Text";
 import { Wallet } from "./Icons/Wallet";
 import { Sms } from "./Icons/Sms";
 import { Sms_Edit } from "./Icons/Sms_Edit";
+import { WhatsApp } from "./Icons/WhatsApp";
+import { Call } from "./Icons/Call";
+import { Telegram } from "./Icons/Telegram";
+import { Instagram } from "./Icons/Instagram";
 
 const icons = {
   add: Add,
@@ -43,6 +47,10 @@ const icons = {
   document_text: Document_Text,
   sms: Sms,
   sms_edit: Sms_Edit,
+  whatsApp: WhatsApp,
+  call: Call,
+  telegram: Telegram,
+  instagram: Instagram,
   longCurvedLine: LongCurvedLine,
   shortCurvedLine: ShortCurvedLine,
 };
