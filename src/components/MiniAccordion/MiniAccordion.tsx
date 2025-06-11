@@ -29,20 +29,20 @@ export const MiniAccordion = ({
       className={`${styles.accordion} ${isOpen ? styles.active : ""}`}
       onClick={onToggle}
     >
-       <Icon
-          color="var(--primary-text-02)"
-          name="shortCurvedLine"
-          w={24}
-          h={24}
-          className={styles.shortCurveIcon}
-        />
-        <Icon
-            color="var(--primary-text-02)"
-            name="longCurvedLine"
-            w={24}
-            h={24}
-            className={styles.LongCurveIcon}
-          />
+      <Icon
+        color="var(--primary-text-02)"
+        name="shortCurvedLine"
+        w={24}
+        h={24}
+        className={styles.shortCurveIcon}
+      />
+      <Icon
+        color="var(--primary-text-02)"
+        name="longCurvedLine"
+        w={24}
+        h={24}
+        className={styles.LongCurveIcon}
+      />
       <div className={styles.accordionContent}>
         <Icon
           color="var(--primary-text-02)"
@@ -53,7 +53,7 @@ export const MiniAccordion = ({
         <div
           className={`${styles.title} h6-xl-600 ${isOpen ? "h6-xl-700" : ""}`}
         >
-          {title}
+          <h3>{title}</h3>
         </div>
       </div>
       <div
@@ -61,8 +61,9 @@ export const MiniAccordion = ({
         style={{ height: `${contentHeight}px` }}
         ref={contentRef}
       >
-        
-        <div className={`${styles.desc} body3-sm-600`}>{desc}</div>
+        <div className={`${styles.desc} body3-sm-600`}>
+          <p>{desc}</p>
+        </div>
       </div>
     </div>
   );
