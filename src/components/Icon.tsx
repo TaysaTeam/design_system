@@ -22,9 +22,11 @@ import { Wallet } from "./Icons/Wallet";
 import { Sms } from "./Icons/Sms";
 import { Sms_Edit } from "./Icons/Sms_Edit";
 import { WhatsApp } from "./Icons/WhatsApp";
-import { Call } from "./Icons/Call";
+import { Calling } from "./Icons/Calling";
 import { Telegram } from "./Icons/Telegram";
 import { Instagram } from "./Icons/Instagram";
+import { Email } from "./Icons/Email";
+import { Location } from "./Icons/Location";
 
 const icons = {
   add: Add,
@@ -48,7 +50,9 @@ const icons = {
   sms: Sms,
   sms_edit: Sms_Edit,
   whatsApp: WhatsApp,
-  call: Call,
+  calling: Calling,
+  email: Email,
+  location: Location,
   telegram: Telegram,
   instagram: Instagram,
   longCurvedLine: LongCurvedLine,
