@@ -27,6 +27,7 @@ import { Telegram } from "./Icons/Telegram";
 import { Instagram } from "./Icons/Instagram";
 import { Email } from "./Icons/Email";
 import { Location } from "./Icons/Location";
+import { ArrowLeft } from "./Icons/ArrowLeft";
 
 const icons = {
   add: Add,
@@ -57,6 +58,7 @@ const icons = {
   instagram: Instagram,
   longCurvedLine: LongCurvedLine,
   shortCurvedLine: ShortCurvedLine,
+  arrowLeft: ArrowLeft,
 };
 
 export type IconName = keyof typeof icons;
