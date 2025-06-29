@@ -1,30 +1,30 @@
 :root {
   --base-white: #ffffff;
   --base-black: #000000;
-  --brand-25: #f5feff;
-  --brand-50: #ecfdff;
-  --brand-100: #cff9fe;
-  --brand-200: #a5f0fc;
-  --brand-300: #67e3f9;
-  --brand-400: #22ccee;
-  --brand-500: #06aed4;
-  --brand-600: #088ab2;
-  --brand-700: #0e7090;
-  --brand-800: #155b75;
-  --brand-900: #164c63;
-  --brand-950: #0d2d3a;
-  --secondary-light-25: #fbfbfb;
-  --secondary-light-50: #f2f2f2;
-  --secondary-light-100: #e4e4e4;
-  --secondary-light-200: #c7c7c7;
-  --secondary-light-300: #ababab;
-  --secondary-light-400: #8f8f8f;
-  --secondary-light-500: #727272;
-  --secondary-light-600: #565656;
-  --secondary-light-700: #393939;
-  --secondary-light-800: #1c1c1c;
-  --secondary-light-900: #050505;
-  --secondary-light-950: #000000;
+  --secondary-25: #f5feff;
+  --secondary-50: #ecfdff;
+  --secondary-100: #cff9fe;
+  --secondary-200: #a5f0fc;
+  --secondary-300: #67e3f9;
+  --secondary-400: #22ccee;
+  --secondary-500: #06aed4;
+  --secondary-600: #088ab2;
+  --secondary-700: #0e7090;
+  --secondary-800: #155b75;
+  --secondary-900: #164c63;
+  --secondary-950: #0d2d3a;
+  --primary-light-25: #fbfbfb;
+  --primary-light-50: #f2f2f2;
+  --primary-light-100: #e4e4e4;
+  --primary-light-200: #c7c7c7;
+  --primary-light-300: #ababab;
+  --primary-light-400: #8f8f8f;
+  --primary-light-500: #727272;
+  --primary-light-600: #565656;
+  --primary-light-700: #393939;
+  --primary-light-800: #1c1c1c;
+  --primary-light-900: #050505;
+  --primary-light-950: #000000;
   --gray-light-25: #fcfcfd;
   --gray-light-50: #f9fafb;
   --gray-light-100: #f2f4f7;
@@ -49,14 +49,14 @@
   --gray-primary-800: #77797a;
   --gray-primary-900: #4f5051;
   --gray-primary-950: #272828;
-  --primary-border-01: #22ccee;
-  --primary-border-02: #06aed4;
-  --primary-border-03: #088ab2;
-  --primary-border-04: #155b75;
-  --secondary-border-01: #050505;
-  --secondary-border-02: #393939;
-  --secondary-border-03: #565656;
-  --secondary-border-04: #8f8f8f;
+  --secondary-border-01: #22ccee;
+  --secondary-border-02: #06aed4;
+  --secondary-border-03: #088ab2;
+  --secondary-border-04: #155b75;
+  --primary-border-01: #050505;
+  --primary-border-02: #393939;
+  --primary-border-03: #565656;
+  --primary-border-04: #8f8f8f;
   --neutral-border-01: #1c1c1c;
   --neutral-border-02: #c7c7c7;
   --neutral-border-03: #565656;
@@ -68,13 +68,14 @@
   --warning-border-02: #dc6803;
   --error-border-01: #d92d20;
   --error-border-02: #912018;
-  --primary-background-01: #ecfdff;
-  --primary-background-02: #06aed4;
-  --primary-background-03: #088ab2;
-  --primary-background-04: #0e6f90;
-  --secondary-background-01: #c7c7c7;
-  --secondary-background-02: #565656;
-  --secondary-background-03: #050505;
+  --primary-background-01: #f2f2f2;
+  --primary-background-02: #c7c7c7;
+  --primary-background-03: #565656;
+  --primary-background-04: #050505;
+  --secondary-background-01: #f5feff;
+  --secondary-background-02: #06aed4;
+  --secondary-background-03: #088ab2;
+  --secondary-background-04: #0e6f90;
   --neutral-background-01: #000000;
   --neutral-background-02: #393939;
   --neutral-background-03: #8f8f8f;
@@ -94,10 +95,10 @@
   --error-background-02: #f97066;
   --error-background-03: #d92d20;
   --error-background-04: #912018;
-  --primary-foreground-01: #088ab2;
-  --primary-foreground-02: #155b75;
-  --secondary-foreground-01: #ffffff;
-  --secondary-foreground-02: #000000;
+  --primary-foreground-01: #ffffff;
+  --primary-foreground-02: #000000;
+  --secondary-foreground-01: #088ab2;
+  --secondary-foreground-02: #155b75;
   --neutral-foreground-01: #f2f2f2;
   --neutral-foreground-02: #c7c7c7;
   --success-foreground-01: #17b26a;
@@ -441,30 +442,30 @@
 [data-theme=dark] {
   --base-white: #000000;
   --base-black: #ffffff;
-  --brand-25: #0d2d3a;
-  --brand-50: #164c63;
-  --brand-100: #155b75;
-  --brand-200: #0e7090;
-  --brand-300: #088ab2;
-  --brand-400: #06aed4;
-  --brand-500: #22ccee;
-  --brand-600: #67e3f9;
-  --brand-700: #a5f0fc;
-  --brand-800: #cff9fe;
-  --brand-900: #ecfdff;
-  --brand-950: #f5feff;
-  --secondary-light-25: #020202;
-  --secondary-light-50: #151515;
-  --secondary-light-100: #1b1b1b;
-  --secondary-light-200: #383838;
-  --secondary-light-300: #545454;
-  --secondary-light-400: #717171;
-  --secondary-light-500: #8d8d8d;
-  --secondary-light-600: #aaaaaa;
-  --secondary-light-700: #c6c6c6;
-  --secondary-light-800: #e3e3e3;
-  --secondary-light-900: #fafafa;
-  --secondary-light-950: #ffffff;
+  --secondary-25: #0d2d3a;
+  --secondary-50: #164c63;
+  --secondary-100: #155b75;
+  --secondary-200: #0e7090;
+  --secondary-300: #088ab2;
+  --secondary-400: #06aed4;
+  --secondary-500: #22ccee;
+  --secondary-600: #67e3f9;
+  --secondary-700: #a5f0fc;
+  --secondary-800: #cff9fe;
+  --secondary-900: #ecfdff;
+  --secondary-950: #f5feff;
+  --primary-light-25: #020202;
+  --primary-light-50: #151515;
+  --primary-light-100: #1b1b1b;
+  --primary-light-200: #383838;
+  --primary-light-300: #545454;
+  --primary-light-400: #717171;
+  --primary-light-500: #8d8d8d;
+  --primary-light-600: #aaaaaa;
+  --primary-light-700: #c6c6c6;
+  --primary-light-800: #e3e3e3;
+  --primary-light-900: #fafafa;
+  --primary-light-950: #ffffff;
   --gray-light-25: #0c111d;
   --gray-light-50: #101828;
   --gray-light-100: #182230;
@@ -489,17 +490,17 @@
   --gray-primary-800: #f9fafb;
   --gray-primary-900: #fafbfc;
   --gray-primary-950: #fcfdfd;
-  --primary-border-01: #06aed4;
-  --primary-border-02: #67e3f9;
-  --primary-border-03: #a5f0fc;
-  --primary-border-03: #cff9fe;
-  --secondary-border-01: #ffffff;
-  --secondary-border-02: #e3e3e3;
-  --secondary-border-03: #c6c6c6;
-  --secondary-border-04: #aaaaaa;
+  --secondary-border-01: #06aed4;
+  --secondary-border-02: #67e3f9;
+  --secondary-border-03: #a5f0fc;
+  --secondary-border-03: #cff9fe;
+  --primary-border-01: #ffffff;
+  --primary-border-02: #e3e3e3;
+  --primary-border-03: #c6c6c6;
+  --primary-border-04: #aaaaaa;
   --neutral-border-01: #fafafa;
-  --neutral-border-02: #717171;
-  --neutral-border-03: #383838;
+  --neutral-border-02: #383838;
+  --neutral-border-03: #717171;
   --success-border-01: #47cd89;
   --success-border-02: #abefc6;
   --info-border-01: #84caff;
@@ -508,15 +509,16 @@
   --warning-border-02: #fec84b;
   --error-border-01: #fda29b;
   --error-border-02: #fee4e2;
-  --primary-background-01: #088ab2;
-  --primary-background-02: #a5f0fc;
-  --primary-background-03: #a5f0fc;
-  --primary-background-04: #cff9fe;
-  --secondary-background-01: #383838;
-  --secondary-background-02: #c6c6c6;
-  --secondary-background-03: #fafafa;
-  --neutral-background-01: #ffffff;
-  --neutral-background-02: #8d8d8d;
+  --secondary-background-01: #088ab2;
+  --secondary-background-02: #67e3f9;
+  --secondary-background-03: #a5f0fc;
+  --secondary-background-04: #cff9fe;
+  --primary-background-01: #383838;
+  --primary-background-02: #545454;
+  --primary-background-03: #aaaaaa;
+  --primary-background-04: #ffffff;
+  --neutral-background-01: #fafafa;
+  --neutral-background-02: #c6c6c6;
   --neutral-background-03: #717171;
   --success-background-01: #074d31;
   --success-background-02: #079455;
@@ -535,11 +537,13 @@
   --error-background-03: #fda29b;
   --error-background-04: #fee4e2;
   --primary-foreground-01: #67e3f9;
-  --primary-foreground-02: #cff9fe;
-  --secondary-foreground-01: #020202;
-  --secondary-foreground-02: #ffffff;
+  --primary-foreground-02: #ffffff;
+  --secondary-foreground-01: #67e3f9;
+  --secondary-foreground-02: #0e6f90;
   --neutral-foreground-01: #151515;
-  --neutral-foreground-02: #545454;
+  --neutral-foreground-02: #383838;
+  --neutral-foreground-03: #717171;
+  --neutral-foreground-04: #aaaaaa;
   --success-foreground-01: #47cd89;
   --success-foreground-02: #abefc6;
   --info-foreground-01: #84caff;
@@ -548,14 +552,14 @@
   --warning-foreground-02: #fec84b;
   --error-foreground-01: #fda29b;
   --error-foreground-02: #fee4e2;
-  --primary-text-01: #020202;
+  --primary-text-01: #000000;
   --primary-text-02: #ffffff;
   --secondary-text-01: #67e3f9;
   --secondary-text-02: #cff9fe;
   --neutral-text-01: #151515;
-  --neutral-text-02: #545454;
+  --neutral-text-02: #383838;
   --neutral-text-03: #717171;
-  --neutral-text-03: #aaaaaa;
+  --neutral-text-04: #aaaaaa;
   --success-text-01: #47cd89;
   --success-text-02: #abefc6;
   --info-text-01: #84caff;
@@ -924,1225 +928,1000 @@
   --shadow-3xl: 3px 50px 70px 24px rgba(16, 24, 40, 0.14);
 }
 
-.display-7xl-100 {
+:global .display-7xl-100 {
   font-size: 6rem;
   font-weight: 100;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-100 {
+:global .h1-6xl-100 {
   font-size: 4.5rem;
   font-weight: 100;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-100 {
+:global .h2-5xl-100 {
   font-size: 3.625rem;
   font-weight: 100;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-100 {
+:global .h3-4xl-100 {
   font-size: 3rem;
   font-weight: 100;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-100 {
+:global .h4-3xl-100 {
   font-size: 2rem;
   font-weight: 100;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-100 {
+:global .h5-2xl-100 {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-100 {
+:global .h6-xl-100 {
   font-size: 1.25rem;
   font-weight: 100;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-100 {
+:global .body1-lg-100 {
   font-size: 1.125rem;
   font-weight: 100;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-100 {
+:global .body2-md-100 {
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-100 {
+:global .body3-sm-100 {
   font-size: 0.875rem;
   font-weight: 100;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-100 {
+:global .caption1-xs-100 {
   font-size: 0.75rem;
   font-weight: 100;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-100 {
+:global .caption2-xxs-100 {
   font-size: 0.625rem;
   font-weight: 100;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-300 {
+:global .display-7xl-300 {
   font-size: 6rem;
   font-weight: 300;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-300 {
+:global .h1-6xl-300 {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-300 {
+:global .h2-5xl-300 {
   font-size: 3.625rem;
   font-weight: 300;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-300 {
+:global .h3-4xl-300 {
   font-size: 3rem;
   font-weight: 300;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-300 {
+:global .h4-3xl-300 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-300 {
+:global .h5-2xl-300 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-300 {
+:global .h6-xl-300 {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-300 {
+:global .body1-lg-300 {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-300 {
+:global .body2-md-300 {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-300 {
+:global .body3-sm-300 {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-300 {
+:global .caption1-xs-300 {
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-300 {
+:global .caption2-xxs-300 {
   font-size: 0.625rem;
   font-weight: 300;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-400 {
+:global .display-7xl-400 {
   font-size: 6rem;
   font-weight: 400;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-400 {
+:global .h1-6xl-400 {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-400 {
+:global .h2-5xl-400 {
   font-size: 3.625rem;
   font-weight: 400;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-400 {
+:global .h3-4xl-400 {
   font-size: 3rem;
   font-weight: 400;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-400 {
+:global .h4-3xl-400 {
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-400 {
+:global .h5-2xl-400 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-400 {
+:global .h6-xl-400 {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-400 {
+:global .body1-lg-400 {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-400 {
+:global .body2-md-400 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-400 {
+:global .body3-sm-400 {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-400 {
+:global .caption1-xs-400 {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-400 {
+:global .caption2-xxs-400 {
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-600 {
+:global .display-7xl-600 {
   font-size: 6rem;
   font-weight: 600;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-600 {
+:global .h1-6xl-600 {
   font-size: 4.5rem;
   font-weight: 600;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-600 {
+:global .h2-5xl-600 {
   font-size: 3.625rem;
   font-weight: 600;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-600 {
+:global .h3-4xl-600 {
   font-size: 3rem;
   font-weight: 600;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-600 {
+:global .h4-3xl-600 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-600 {
+:global .h5-2xl-600 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-600 {
+:global .h6-xl-600 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-600 {
+:global .body1-lg-600 {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-600 {
+:global .body2-md-600 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-600 {
+:global .body3-sm-600 {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-600 {
+:global .caption1-xs-600 {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-600 {
+:global .caption2-xxs-600 {
   font-size: 0.625rem;
   font-weight: 600;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-700 {
+:global .display-7xl-700 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-700 {
+:global .h1-6xl-700 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-700 {
+:global .h2-5xl-700 {
   font-size: 3.625rem;
   font-weight: 700;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-700 {
+:global .h3-4xl-700 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-700 {
+:global .h4-3xl-700 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-700 {
+:global .h5-2xl-700 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-700 {
+:global .h6-xl-700 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-700 {
+:global .body1-lg-700 {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-700 {
+:global .body2-md-700 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-700 {
+:global .body3-sm-700 {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-700 {
+:global .caption1-xs-700 {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-700 {
+:global .caption2-xxs-700 {
   font-size: 0.625rem;
   font-weight: 700;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-800 {
+:global .display-7xl-800 {
   font-size: 6rem;
   font-weight: 800;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-800 {
+:global .h1-6xl-800 {
   font-size: 4.5rem;
   font-weight: 800;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-800 {
+:global .h2-5xl-800 {
   font-size: 3.625rem;
   font-weight: 800;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-800 {
+:global .h3-4xl-800 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-800 {
+:global .h4-3xl-800 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-800 {
+:global .h5-2xl-800 {
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-800 {
+:global .h6-xl-800 {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-800 {
+:global .body1-lg-800 {
   font-size: 1.125rem;
   font-weight: 800;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-800 {
+:global .body2-md-800 {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-800 {
+:global .body3-sm-800 {
   font-size: 0.875rem;
   font-weight: 800;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-800 {
+:global .caption1-xs-800 {
   font-size: 0.75rem;
   font-weight: 800;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-800 {
+:global .caption2-xxs-800 {
   font-size: 0.625rem;
   font-weight: 800;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-900 {
+:global .display-7xl-900 {
   font-size: 6rem;
   font-weight: 900;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-900 {
+:global .h1-6xl-900 {
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-900 {
+:global .h2-5xl-900 {
   font-size: 3.625rem;
   font-weight: 900;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-900 {
+:global .h3-4xl-900 {
   font-size: 3rem;
   font-weight: 900;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-900 {
+:global .h4-3xl-900 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-900 {
+:global .h5-2xl-900 {
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-900 {
+:global .h6-xl-900 {
   font-size: 1.25rem;
   font-weight: 900;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-900 {
+:global .body1-lg-900 {
   font-size: 1.125rem;
   font-weight: 900;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-900 {
+:global .body2-md-900 {
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-900 {
+:global .body3-sm-900 {
   font-size: 0.875rem;
   font-weight: 900;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-900 {
+:global .caption1-xs-900 {
   font-size: 0.75rem;
   font-weight: 900;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-900 {
+:global .caption2-xxs-900 {
   font-size: 0.625rem;
   font-weight: 900;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-7xl-950 {
+:global .display-7xl-950 {
   font-size: 6rem;
   font-weight: 950;
   line-height: 9rem;
   font-style: normal;
 }
-
-.h1-6xl-950 {
+:global .h1-6xl-950 {
   font-size: 4.5rem;
   font-weight: 950;
   line-height: 7rem;
   font-style: normal;
 }
-
-.h2-5xl-950 {
+:global .h2-5xl-950 {
   font-size: 3.625rem;
   font-weight: 950;
   line-height: 5.5rem;
   font-style: normal;
 }
-
-.h3-4xl-950 {
+:global .h3-4xl-950 {
   font-size: 3rem;
   font-weight: 950;
   line-height: 4.5rem;
   font-style: normal;
 }
-
-.h4-3xl-950 {
+:global .h4-3xl-950 {
   font-size: 2rem;
   font-weight: 950;
   line-height: 3.5rem;
   font-style: normal;
 }
-
-.h5-2xl-950 {
+:global .h5-2xl-950 {
   font-size: 1.5rem;
   font-weight: 950;
   line-height: 2.5rem;
   font-style: normal;
 }
-
-.h6-xl-950 {
+:global .h6-xl-950 {
   font-size: 1.25rem;
   font-weight: 950;
   line-height: 2rem;
   font-style: normal;
 }
-
-.body1-lg-950 {
+:global .body1-lg-950 {
   font-size: 1.125rem;
   font-weight: 950;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.body2-md-950 {
+:global .body2-md-950 {
   font-size: 1rem;
   font-weight: 950;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body3-sm-950 {
+:global .body3-sm-950 {
   font-size: 0.875rem;
   font-weight: 950;
   line-height: 1.375rem;
   font-style: normal;
 }
-
-.caption1-xs-950 {
+:global .caption1-xs-950 {
   font-size: 0.75rem;
   font-weight: 950;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.caption2-xxs-950 {
+:global .caption2-xxs-950 {
   font-size: 0.625rem;
   font-weight: 950;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.display-4xl-100 {
+:global .display-4xl-100 {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-100 {
+:global .h1-3xl-100 {
   font-size: 1.25rem;
   font-weight: 100;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-100 {
+:global .h2-2xl-100 {
   font-size: 1.125rem;
   font-weight: 100;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-100 {
+:global .h3-xl-100 {
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-100 {
+:global .body1-m-lg-100 {
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-100 {
+:global .body2-m-md-100 {
   font-size: 0.875rem;
   font-weight: 100;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-100 {
+:global .body3-m-sm-100 {
   font-size: 0.75rem;
   font-weight: 100;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-100 {
+:global .caption-xs-100 {
   font-size: 0.625rem;
   font-weight: 100;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-300 {
+:global .display-4xl-300 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-300 {
+:global .h1-3xl-300 {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-300 {
+:global .h2-2xl-300 {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-300 {
+:global .h3-xl-300 {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-300 {
+:global .body1-m-lg-300 {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-300 {
+:global .body2-m-md-300 {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-300 {
+:global .body3-m-sm-300 {
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-300 {
+:global .caption-xs-300 {
   font-size: 0.625rem;
   font-weight: 300;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-400 {
+:global .display-4xl-400 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-400 {
+:global .h1-3xl-400 {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-400 {
+:global .h2-2xl-400 {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-400 {
+:global .h3-xl-400 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-400 {
+:global .body1-m-lg-400 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-400 {
+:global .body2-m-md-400 {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-400 {
+:global .body3-m-sm-400 {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-400 {
+:global .caption-xs-400 {
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-600 {
+:global .display-4xl-600 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-600 {
+:global .h1-3xl-600 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-600 {
+:global .h2-2xl-600 {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-600 {
+:global .h3-xl-600 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-600 {
+:global .body1-m-lg-600 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-600 {
+:global .body2-m-md-600 {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-600 {
+:global .body3-m-sm-600 {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-600 {
+:global .caption-xs-600 {
   font-size: 0.625rem;
   font-weight: 600;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-700 {
+:global .display-4xl-700 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-700 {
+:global .h1-3xl-700 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-700 {
+:global .h2-2xl-700 {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-700 {
+:global .h3-xl-700 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-700 {
+:global .body1-m-lg-700 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-700 {
+:global .body2-m-md-700 {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-700 {
+:global .body3-m-sm-700 {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-700 {
+:global .caption-xs-700 {
   font-size: 0.625rem;
   font-weight: 700;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-800 {
+:global .display-4xl-800 {
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-800 {
+:global .h1-3xl-800 {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-800 {
+:global .h2-2xl-800 {
   font-size: 1.125rem;
   font-weight: 800;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-800 {
+:global .h3-xl-800 {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-800 {
+:global .body1-m-lg-800 {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-800 {
+:global .body2-m-md-800 {
   font-size: 0.875rem;
   font-weight: 800;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-800 {
+:global .body3-m-sm-800 {
   font-size: 0.75rem;
   font-weight: 800;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-800 {
+:global .caption-xs-800 {
   font-size: 0.625rem;
   font-weight: 800;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-900 {
+:global .display-4xl-900 {
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-900 {
+:global .h1-3xl-900 {
   font-size: 1.25rem;
   font-weight: 900;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-900 {
+:global .h2-2xl-900 {
   font-size: 1.125rem;
   font-weight: 900;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-900 {
+:global .h3-xl-900 {
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-900 {
+:global .body1-m-lg-900 {
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-900 {
+:global .body2-m-md-900 {
   font-size: 0.875rem;
   font-weight: 900;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-900 {
+:global .body3-m-sm-900 {
   font-size: 0.75rem;
   font-weight: 900;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-900 {
+:global .caption-xs-900 {
   font-size: 0.625rem;
   font-weight: 900;
   line-height: 1rem;
   font-style: normal;
 }
-
-.display-4xl-950 {
+:global .display-4xl-950 {
   font-size: 1.5rem;
   font-weight: 950;
   line-height: 2.25rem;
   font-style: normal;
 }
-
-.h1-3xl-950 {
+:global .h1-3xl-950 {
   font-size: 1.25rem;
   font-weight: 950;
   line-height: 1.875rem;
   font-style: normal;
 }
-
-.h2-2xl-950 {
+:global .h2-2xl-950 {
   font-size: 1.125rem;
   font-weight: 950;
   line-height: 1.75rem;
   font-style: normal;
 }
-
-.h3-xl-950 {
+:global .h3-xl-950 {
   font-size: 1rem;
   font-weight: 950;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body1-m-lg-950 {
+:global .body1-m-lg-950 {
   font-size: 1rem;
   font-weight: 950;
   line-height: 1.5rem;
   font-style: normal;
 }
-
-.body2-m-md-950 {
+:global .body2-m-md-950 {
   font-size: 0.875rem;
   font-weight: 950;
   line-height: 1.25rem;
   font-style: normal;
 }
-
-.body3-m-sm-950 {
+:global .body3-m-sm-950 {
   font-size: 0.75rem;
   font-weight: 950;
   line-height: 1.125rem;
   font-style: normal;
 }
-
-.caption-xs-950 {
+:global .caption-xs-950 {
   font-size: 0.625rem;
   font-weight: 950;
   line-height: 1rem;
   font-style: normal;
 }
 
+/* CSS Document */
 @font-face {
-  font-family: "Yekan Bakh";
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: 100;
-  src: url("./YekanBakh-thin.woff2") format("woff2");
+  font-weight: bold;
+  src: url("fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Yekan Bakh";
+  font-family: IRANSans;
   font-style: normal;
   font-weight: 300;
-  src: url("./YekanBakh-Light.woff2") format("woff2");
+  src: url("fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+  src: url("fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Yekan Bakh";
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: 400;
-  src: url("./YekanBakh-Regular.woff2") format("woff2");
+  font-weight: 200;
+  src: url("fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+  src: url("fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Yekan Bakh";
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: 600;
-  src: url("./YekanBakh-SemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./YekanBakh-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  font-style: normal;
-  font-weight: 800;
-  src: url("./YekanBakh-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./YekanBakh-Black.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh";
-  font-style: normal;
-  font-weight: 950;
-  src: url("./YekanBakh-ExtraBlack.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 100;
-  src: "./YekanBakhFaNum-thin.woff2" format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 300;
-  src: "./YekanBakhFaNum-Light.woff2" format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 400;
-  src: "./YekanBakhFaNum-Regular.woff2" format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 600;
-  src: "./YekanBakhFaNum-SemiBold.woff2" format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 700;
-  src: "./YekanBakhFaNum-Bold.woff2" format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 800;
-  src: url("./YekanBakhFaNum-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./YekanBakhFaNum-Black.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 950;
-  src: url("./YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+  font-weight: normal;
+  src: url("fonts/eot/IRANSansWeb(FaNum).eot");
+  src: url("fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Yekan Bakh", "Yekan Bakh FaNum", sans-serif !important;
+  font-family: "IRANSans", sans-serif !important;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
