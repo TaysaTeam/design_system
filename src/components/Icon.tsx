@@ -21,6 +21,21 @@ import { Document_Text } from "./Icons/Document_Text";
 import { Wallet } from "./Icons/Wallet";
 import { Sms } from "./Icons/Sms";
 import { Sms_Edit } from "./Icons/Sms_Edit";
+import { WhatsApp } from "./Icons/WhatsApp";
+import { Calling } from "./Icons/Calling";
+import { Telegram } from "./Icons/Telegram";
+import { Instagram } from "./Icons/Instagram";
+import { Email } from "./Icons/Email";
+import { Location } from "./Icons/Location";
+import { ArrowLeft } from "./Icons/ArrowLeft";
+import { Calendar_Edit } from "./Icons/Calendar_Edit";
+import { Graph } from "./Icons/Graph";
+import { Notification_Bing } from "./Icons/Notification_Bing";
+import { Security_Safe } from "./Icons/Security_Safe";
+import { Smileys } from "./Icons/Smileys";
+import { Tick_Circle } from "./Icons/Tick_Circle";
+import { Timer } from "./Icons/Timer";
+import { User_Circle_Add } from "./Icons/User_Circle_Add";
 
 const icons = {
   add: Add,
@@ -43,8 +58,23 @@ const icons = {
   document_text: Document_Text,
   sms: Sms,
   sms_edit: Sms_Edit,
+  whatsApp: WhatsApp,
+  calling: Calling,
+  email: Email,
+  location: Location,
+  telegram: Telegram,
+  instagram: Instagram,
   longCurvedLine: LongCurvedLine,
   shortCurvedLine: ShortCurvedLine,
+  arrowLeft: ArrowLeft,
+  calendar_edit: Calendar_Edit,
+  graph: Graph,
+  notification_bing: Notification_Bing,
+  security_safe: Security_Safe,
+  smileys: Smileys,
+  tick_circle: Tick_Circle,
+  timer: Timer,
+  user_circle_add: User_Circle_Add,
 };
 
 export type IconName = keyof typeof icons;
